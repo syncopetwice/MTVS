@@ -313,6 +313,15 @@ Pages
 .CommunityProfilePage .p-st-blk { display: inline-block; width: 40px; text-align: right; vertical-align: middle; height: 24px; margin-top: -12px; }
 .CommunityProfilePage .p-chb { font-size: 1.3em; color: #FF7F50; font-weight: bold; vertical-align: middle; }
 .CommunityProfilePage .fa.fa-spinner.fa-pulse { font-size: 2.5em; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn { border-color: #ff0024 !important; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn:before { background-color: #ff0024; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn:after { color: #ff0024; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #72c02c !important; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn:before { background-color: #72c02c; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn:after { color: #72c02c; }
+.CommunityProfilePage #digest .table thead { background: #f7f7f7; }
+.CommunityProfilePage #digest i.rounded-x { width: 24px; height: 24px; }
+.CommunityProfilePage #digest i.rounded-x.fa { background: #72c02c; color: white; border-color: #72c02c; }
 
 /* ------------------
 	CommunityRegTerms

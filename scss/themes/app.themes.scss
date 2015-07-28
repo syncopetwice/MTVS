@@ -17,44 +17,141 @@ $themes:
 
 // Mixin
 
+// @import url(app.css);
+// @import url(ie8.css);
+// @import url(blocks.css);
+// @import url(plugins.css);
+// @import url(plugins/animate.css);
+// @import url(plugins/box-shadows.css);
+// @import url(plugins/style-switcher.css);
+// @import url(headers/header-v1.css);
+// @import url(footers/footer-default.css);
+// @import url(footers/footer-v1.css);
+// @import url(footers/footer-v2.css);
+// @import url(footers/footer-v3.css);
+// @import url(footers/footer-v4.css);
+// @import url(footers/footer-v5.css);
+// @import url(footers/footer-v6.css);
+// @import url(footers/footer-v7.css);
+
 @mixin theme($name, $color, $hover) {
 	html.#{$name} {
 
 	// Files ::::::::::::::::::::::
-
-		// File: plugins.css
-			.counters span.counter-icon i {
-				background: $color;
+		
+		// File: style
+			a {
+				color: $color;
 			}
-			.counters span.counter-icon i:after {
-				border-top-color: $color;
+			a:hover {
+				color: $color;
 			}
-			#topcontrol:hover {
-				background: $color;
-			}
-			.owl-btn:hover {
-				background: $color;
-			}
-			.owl-carousel-v5 .owl-controls .owl-page.active span,
-			.owl-carousel-v5 .owl-controls.clickable .owl-page:hover span {
-				background: $color;
-			}
-			.testimonials-v3 .owl-buttons .owl-prev:hover,
-			.testimonials-v3 .owl-buttons .owl-next:hover {
-				background: $color;
-			}
-			.owl-work-v1 .item a:hover span {
+			.recent-work a:hover span {
 				border-bottom-color: $color;
 			}
-			.fusion-portfolio #filters-container .cbp-filter-item-active {
+			.breadcrumb li.active,
+			.breadcrumb li a:hover {
+				color: $color;
+			}
+			.thumbnail h3 a:hover,
+			.thumbnail-style h3 a:hover {
+				color: $color;
+			}
+			.thumbnail-style a.btn-more {
 				background: $color;
+			}
+			.thumbnail-style a.btn-more:hover {
+				box-shadow: 0 0 0 2px $hover;
+			}
+			.service-alternative .service:hover {
+				background: $color;
+			}
+			.posts .dl-horizontal dd a:hover {
+				color: $color;
+			}
+			.posts .dl-horizontal:hover dt img,
+			.posts .dl-horizontal:hover dd a {
+				color: $color;
+				border-color: $color !important;
+			}
+			.team ul.team-socail li i:hover {
+				background: $color;
+			}
+			.team .thumbnail-style:hover h3 a {
+				color: $color !important;
+			}
+			.privacy a:hover {
+				color: $color;
+			}
+			ul.blog-tags a:hover {
+				background: $color;
+			}
+			.blog-photos li img:hover {
+				box-shadow: 0 0 0 2px $color;
+			}
+			.blog-twitter .blog-twitter-inner:hover {
+				border-color: $color;
+				border-top-color: $color;
+			}
+			.blog-twitter .blog-twitter-inner:hover:after {
+				border-top-color: $color;
+			}
+			.blog-twitter .blog-twitter-inner a {
+				color: $color;
+			}
+			.who li i {
+				color: $color;
+			}
+			.promo-box:hover strong, 
+			.promo-box:hover strong a {
+				color: $color;
+			}
+			.info-blocks:hover i.icon-info-blocks {
+				color: $color;
+			}
+			.line-icon-page .item:hover {
+				color: $color;
+			}
+			.bs-glyphicons li:hover {
+				color: $color;
+			}
+			.share-list li i {
+				color: $color;
+			}
+			.testimonials-bs .carousel-control-v2 i:hover {
+				color: $color;
 				border-color: $color;
 			}
-			.fusion-portfolio #filters-container .cbp-filter-item:hover {
+			.profile .comment-list li:hover i {
 				color: $color;
 			}
 
-		// File: pages/profile.css
+		// File: plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css
+			.sky-form .button {
+				background: $color;
+			}
+			.sky-form .rating input:checked ~ label {
+				color: $color; 
+			}
+
+		// File: blog_magazine
+			.magazine-news .by-author strong {
+				color: $color;
+			}
+			.magazine-news a.read-more {
+				color: $color;
+			}
+			.magazine-mini-news .post-author strong {
+				color: $color;
+			}
+			.news-read-more i {
+				background: $color;
+			}
+			.magazine-sb-categories ul i {
+				color: $color;
+			}
+
+		// File: profile
 			.profile .profile-post:hover span.profile-post-numb {
 				color: $color;
 			}
@@ -68,62 +165,7 @@ $themes:
 				color: $color;
 			}
 
-		// File: custom.css
-			.file-actions i.fa:hover {
-				color: $color;
-			}
-			.file-actions i.fa.active, .fa.fa-plus-circle.active {
-				color: $color;
-			}
-			.addGroups {
-				color: $color !important;
-			}
-
-		// File: blocks.css
-			.block-grid-v1:hover {
-				border-color: $color;
-			}
-			.grid-block-v2 li:hover .grid-block-v2-info {
-				border-color: $color;
-			}
-			.news-v1 h3 a:hover {
-				color: $color;
-			}
-			.news-v1 .news-v1-info li a:hover {
-				color: $color;
-			}
-			.service-box-v1 p:after {
-				background: $color;
-			}
-			.service-box-v1 li {
-				border-top-color: $color;
-			}
-			.service-box-v1 li:hover {
-				color: $color;
-			}
-			.service-block-v1 i {
-				background: $color;
-			}
-			.team-v1 li:hover > p:before {
-				background: $color;
-			}
-			.portfolio-box .portfolio-box-in i {
-				background: $color;
-			}
-			.portfolio-box small.project-tag a:hover {
-				color: $color;
-			}
-			.portfolio-box-v2 .portfolio-box-v2-in i {
-				background: rgba($color, .8);
-			}
-			.portfolio-box-v2 .portfolio-box-v2-in i:hover {
-				background: $color;
-			}
-			.thumbnails-v1 .read-more {
-				color: $color;
-			}
-
-		// File: app.css
+		// File: app
 			.headline h2, 
 			.headline h3, 
 			.headline h4 {
@@ -308,7 +350,99 @@ $themes:
 				color: $color;
 			}
 
-		// File: header.css
+		// File: custom
+			.file-actions i.fa:hover {
+				color: $color;
+			}
+			.file-actions i.fa.active, .fa.fa-plus-circle.active {
+				color: $color;
+			}
+			.addGroups {
+				color: $color !important;
+			}
+
+		// File: plugins
+			.counters span.counter-icon i {
+				background: $color;
+			}
+			.counters span.counter-icon i:after {
+				border-top-color: $color;
+			}
+			#topcontrol:hover {
+				background: $color;
+			}
+			.owl-btn:hover {
+				background: $color;
+			}
+			.owl-carousel-v5 .owl-controls .owl-page.active span,
+			.owl-carousel-v5 .owl-controls.clickable .owl-page:hover span {
+				background: $color;
+			}
+			.testimonials-v3 .owl-buttons .owl-prev:hover,
+			.testimonials-v3 .owl-buttons .owl-next:hover {
+				background: $color;
+			}
+			.owl-work-v1 .item a:hover span {
+				border-bottom-color: $color;
+			}
+			.fusion-portfolio #filters-container .cbp-filter-item-active {
+				background: $color;
+				border-color: $color;
+			}
+			.fusion-portfolio #filters-container .cbp-filter-item:hover {
+				color: $color;
+			}
+
+		// File: plugins/style-switcher.css
+		.style-switcher li.theme-default {
+			background: $color;
+		}
+
+		// File: blocks
+			.block-grid-v1:hover {
+				border-color: $color;
+			}
+			.grid-block-v2 li:hover .grid-block-v2-info {
+				border-color: $color;
+			}
+			.news-v1 h3 a:hover {
+				color: $color;
+			}
+			.news-v1 .news-v1-info li a:hover {
+				color: $color;
+			}
+			.service-box-v1 p:after {
+				background: $color;
+			}
+			.service-box-v1 li {
+				border-top-color: $color;
+			}
+			.service-box-v1 li:hover {
+				color: $color;
+			}
+			.service-block-v1 i {
+				background: $color;
+			}
+			.team-v1 li:hover > p:before {
+				background: $color;
+			}
+			.portfolio-box .portfolio-box-in i {
+				background: $color;
+			}
+			.portfolio-box small.project-tag a:hover {
+				color: $color;
+			}
+			.portfolio-box-v2 .portfolio-box-v2-in i {
+				background: rgba($color, .8);
+			}
+			.portfolio-box-v2 .portfolio-box-v2-in i:hover {
+				background: $color;
+			}
+			.thumbnails-v1 .read-more {
+				color: $color;
+			}
+
+		// File: header
 			.header-v1 .topbar-v1 .top-v1-data li a:hover i {
 				color: $color;
 			}
@@ -350,92 +484,6 @@ $themes:
 				color: $color;
 			}
 
-		// File: style.css
-			a {
-				color: $color;
-			}
-			a:hover {
-				color: $color;
-			}
-			.recent-work a:hover span {
-				border-bottom-color: $color;
-			}
-			.breadcrumb li.active,
-			.breadcrumb li a:hover {
-				color: $color;
-			}
-			.thumbnail h3 a:hover,
-			.thumbnail-style h3 a:hover {
-				color: $color;
-			}
-			.thumbnail-style a.btn-more {
-				background: $color;
-			}
-			.thumbnail-style a.btn-more:hover {
-				box-shadow: 0 0 0 2px $hover;
-			}
-			.service-alternative .service:hover {
-				background: $color;
-			}
-			.posts .dl-horizontal dd a:hover {
-				color: $color;
-			}
-			.posts .dl-horizontal:hover dt img,
-			.posts .dl-horizontal:hover dd a {
-				color: $color;
-				border-color: $color !important;
-			}
-			.team ul.team-socail li i:hover {
-				background: $color;
-			}
-			.team .thumbnail-style:hover h3 a {
-				color: $color !important;
-			}
-			.privacy a:hover {
-				color: $color;
-			}
-			ul.blog-tags a:hover {
-				background: $color;
-			}
-			.blog-photos li img:hover {
-				box-shadow: 0 0 0 2px $color;
-			}
-			.blog-twitter .blog-twitter-inner:hover {
-				border-color: $color;
-				border-top-color: $color;
-			}
-			.blog-twitter .blog-twitter-inner:hover:after {
-				border-top-color: $color;
-			}
-			.blog-twitter .blog-twitter-inner a {
-				color: $color;
-			}
-			.who li i {
-				color: $color;
-			}
-			.promo-box:hover strong, 
-			.promo-box:hover strong a {
-				color: $color;
-			}
-			.info-blocks:hover i.icon-info-blocks {
-				color: $color;
-			}
-			.line-icon-page .item:hover {
-				color: $color;
-			}
-			.bs-glyphicons li:hover {
-				color: $color;
-			}
-			.share-list li i {
-				color: $color;
-			}
-			.testimonials-bs .carousel-control-v2 i:hover {
-				color: $color;
-				border-color: $color;
-			}
-			.profile .comment-list li:hover i {
-				color: $color;
-			}
 
 	// Components :::::::::::::::::::::
 
@@ -506,6 +554,18 @@ $themes:
 					background-color: $color;
 				}
 			}
+		
+		
+		// CommunityFeed_MyMessages
+			.CommunityFeed_MyMessages {
+				.media {
+					&.conversation {
+						&:hover {
+							background: lighten($color, 25%);
+						}
+					}
+				}
+			}
 
 		// CommunityGroupCreate
 			.CommunityGroupCreate {
@@ -542,6 +602,23 @@ $themes:
 					.bPageBlock {
 						border-top-color: $color;
 					}
+				}
+			}
+		// CommunityProfilePage
+			.CommunityProfilePage {
+				#settings {
+					.sky-form {
+						.toggle {
+							i {
+								&.green-btn { border-color: $color !important;}
+								&.green-btn:before { background-color: $color; }
+								&.green-btn:after { color: $color; }
+							}
+						}
+					}
+				}
+				#digest {
+					i.rounded-x.fa { background: $color; border-color: $color; }
 				}
 			}
 

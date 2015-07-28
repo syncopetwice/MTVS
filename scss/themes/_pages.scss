@@ -1,0 +1,71 @@
+// Pages :::::::::::::::::::::::::
+
+	// CommunityDiscover
+	.CommunityDiscover {
+		.tooltips.s-tip {
+			background-color: $color;
+		}
+	}
+
+	// CommunityGroupCreate
+	.CommunityGroupCreate {
+		.row .bPageBlock {
+			border-top-color: $color;
+		}
+		.row.u-page-block {
+			border-top-color: $color;
+		}
+		.nameok {
+			color: $color;
+		}
+	}
+
+	// CommunityGroupManager
+	.CommunityGroupManager {
+		.fa.fa-map-marker {
+			color: $color;
+		}
+	}
+
+	// CommunityNewsDetail
+	.CommunityNewsDetail {
+		.row {
+			&.u-page-block {
+				border-top-color: $color;
+			}
+		}
+	}
+
+	// CommunityNewsEdit
+	.CommunityNewsEdit {
+		.row {
+			.bPageBlock {
+				border-top-color: $color;
+			}
+		}
+	}
+
+	// CommunityRegTerms
+	.CommunityRegTerms {
+		.row .bPageBlock {
+			border-top-color: $color;
+		}
+		.row.u-page-block {
+			border-top-color: $color;
+		}
+		.menu-item-link a:hover {
+			color: $color;
+		}
+		.list-group-item .plus {
+			color: $color;
+		}
+	}
+
+	// CommunityResourceDetail
+	.CommunityResourceDetail {
+		.sky-form {
+			a {
+				color: $color;
+			}
+		}
+	}

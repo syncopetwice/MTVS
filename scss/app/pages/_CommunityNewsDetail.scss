@@ -1,0 +1,15 @@
+/* --------------------
+	CommunityNewsDetail
+-------------------- */
+.CommunityNewsDetail {
+	.row {
+		&.u-page-block {
+			background:#f8f8f8;
+			border-top:3px solid #72c02c;
+		}
+	}
+	.image-container {
+		max-height:300px;
+		overflow:hidden;
+	}
+}

@@ -1,0 +1,15 @@
+/* --------------
+	CommunityMenu
+-------------- */
+.CommunityMenu {
+	ul li, ol li {
+		margin-left:0;
+	}
+	.without-menu {
+		height: 95px !important;
+	}
+	.logopos {
+		position: absolute;
+		bottom: 10px;
+	}
+}

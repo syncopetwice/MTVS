@@ -1,0 +1,34 @@
+/* ----------------------
+	CommunityGroupManager
+---------------------- */
+.CommunityGroupManager {
+	&.profile {
+		.profile-edit {
+			hr {
+				margin: 10px 0 15px;
+			}
+		}
+	}
+	.messageText {
+		padding:15px 30px;
+		margin-bottom:20px;
+		border:1px solid #ebccd1;
+		background-color:#f2dede;
+		color:#a94442;
+	}
+	.messageText {
+		span {
+				display:none;
+		}
+	}
+	table.messageTable {
+		width:100%;
+	}
+	.pending-link {
+		color:#e9b605;
+		font-weight:bold;
+	}
+	.fa.fa-map-marker {
+		color: #72c02c;
+	}
+}

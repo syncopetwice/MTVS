@@ -1,0 +1,19 @@
+/* ------------------
+	CommunityNewsEdit
+------------------ */
+.CommunityNewsEdit {
+	.row {
+		.bPageBlock {
+			border-top:3px solid #72c02c;
+		}
+	}
+	.title-container {
+		padding-left:35px;
+	}
+	.buttons-container {
+		padding-right:25px;
+	}
+	input[type="file"] {
+		margin-top: 5px;
+	}
+}

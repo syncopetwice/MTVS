@@ -1,0 +1,63 @@
+/*----------------------
+	CommunityGroupCreate
+--------------------- */
+.CommunityGroupCreate {
+	.row .bPageBlock {
+		border-top: 3px solid #72c02c;
+		margin-bottom:0;
+	}
+	.row.u-page-block {
+		background:#f8f8f8;
+		padding:15px;
+		margin:0;
+		border-top: 3px solid #72c02c;
+	}
+	.create-group {
+		.title__container {
+			padding-left:35px;
+		}
+		.buttons__container {
+			padding-right:25px;
+		}
+	}
+	// Input Field
+	input[id*="namefield"] {
+		height: 26px;
+	}
+
+	.calert h4 {
+		font-size:1.25em;
+		margin-top:0;
+		color:inherit;
+	}
+	#nabtn {
+		margin-left:5px;
+	}
+	span.nameok,
+	span.nameerr {
+		margin-left:5px;
+	}
+	.nameok i,
+	.nameerr i {
+		font-size:1.5em;
+		margin-right:5px;
+		vertical-align:middle;
+	}
+	.nameok {
+		color:#72c02c;
+	}
+	.nameerr {
+		color:#c00;
+	}
+	.requiredInput textarea {
+		vertical-align:middle;
+	}
+	.sky-form {
+		padding-top: 15px;
+	}
+	.u-page-block {
+		input {
+			vertical-align:top;
+		}
+	}
+}

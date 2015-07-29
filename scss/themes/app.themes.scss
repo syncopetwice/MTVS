@@ -15,6 +15,15 @@ $themes:
 	("theme--Dark-Red", #b61332, #a10f2b),
 	("theme--Teal", #2cd5b6, #18ba9b);
 
+html {
+	a.btn-u {
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
 // Mixin
 
 @mixin theme($name, $color, $hover) {
@@ -83,6 +92,7 @@ $themes:
 				}
 				.btn-u {
 					background: $color;
+					color: #fff;
 				}
 				.btn-u:hover, 
 				.btn-u:focus, 
@@ -497,6 +507,13 @@ $themes:
 						}
 					}
 				}
+				.list-group-item {
+					&.active {
+						a:hover {
+							color: #fff;
+						}
+					}
+				}
 			}
 
 		// CommunityResourceDialog
@@ -572,7 +589,16 @@ $themes:
 					color: $color;
 				}
 			}
-
+		// CommunityGroups
+			.CommunityGroups {
+				&.profile .name-location span i {
+					color: $color;
+				}
+				.share-list li.gr-plus a,
+				.share-list li.bl-plus a {
+					color: $color;
+				}
+			}
 		// CommunityNewsDetail
 			.CommunityNewsDetail {
 				.row {

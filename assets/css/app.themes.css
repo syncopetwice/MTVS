@@ -1,3 +1,6 @@
+html a.btn-u { color: #fff; }
+html a.btn-u:hover { color: #fff; }
+
 html.theme--Blue .headline h2, html.theme--Blue .headline h3, html.theme--Blue .headline h4 { border-bottom-color: #3498db; }
 html.theme--Blue .title-v1 h1:after, html.theme--Blue .title-v1 h2:after { background: #3498db; }
 html.theme--Blue .headline-center h2:after { background: #3498db; }
@@ -11,7 +14,7 @@ html.theme--Blue .pagination li a:hover { background: #2980b9; border-color: #29
 html.theme--Blue .pagination > .active > a, html.theme--Blue .pagination > .active > span, html.theme--Blue .pagination > .active > a:hover, html.theme--Blue .pagination > .active > span:hover, html.theme--Blue .pagination > .active > a:focus, html.theme--Blue .pagination > .active > span:focus { border-color: #3498db; background: #3498db; }
 html.theme--Blue .pager li > a:hover, html.theme--Blue .pager li > a:focus { background: #2980b9; border-color: #2980b9; }
 html.theme--Blue .sidebar-nav-v1 ul li:hover a, html.theme--Blue .sidebar-nav-v1 ul li.active a { color: #3498db; }
-html.theme--Blue .btn-u { background: #3498db; }
+html.theme--Blue .btn-u { background: #3498db; color: #fff; }
 html.theme--Blue .btn-u:hover, html.theme--Blue .btn-u:focus, html.theme--Blue .btn-u:active, html.theme--Blue .btn-u.active, html.theme--Blue .open .dropdown-toggle.btn-u { background: #2980b9; }
 html.theme--Blue .btn-u-split.dropdown-toggle { border-left-color: #2980b9; }
 html.theme--Blue .btn-u.btn-brd { border-color: #3498db; }
@@ -127,6 +130,7 @@ html.theme--Blue .CommunityFeed .profile i.expand-list.active { color: #3498db; 
 html.theme--Blue .CommunityFeed #palist a.curr i.expand-list { color: #3498db; border-color: #3498db; }
 html.theme--Blue .CommunityFeed #palist a.curr:after { color: #3498db; }
 html.theme--Blue .CommunityFeedNavigation .menu-item-link a:hover { color: #3498db; }
+html.theme--Blue .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Blue .CommunityResourceDialog .icon:hover { color: #3498db; border-color: #3498db; }
 html.theme--Blue .CommunityShare .addGroups { color: #3498db !important; }
 html.theme--Blue .CommunityTagSelector .panel-link .panel-heading { color: #3498db; }
@@ -137,6 +141,8 @@ html.theme--Blue .CommunityGroupCreate .row .bPageBlock { border-top-color: #349
 html.theme--Blue .CommunityGroupCreate .row.u-page-block { border-top-color: #3498db; }
 html.theme--Blue .CommunityGroupCreate .nameok { color: #3498db; }
 html.theme--Blue .CommunityGroupManager .fa.fa-map-marker { color: #3498db; }
+html.theme--Blue .CommunityGroups.profile .name-location span i { color: #3498db; }
+html.theme--Blue .CommunityGroups .share-list li.gr-plus a, html.theme--Blue .CommunityGroups .share-list li.bl-plus a { color: #3498db; }
 html.theme--Blue .CommunityNewsDetail .row.u-page-block { border-top-color: #3498db; }
 html.theme--Blue .CommunityNewsEdit .row .bPageBlock { border-top-color: #3498db; }
 html.theme--Blue .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #3498db !important; }
@@ -162,7 +168,7 @@ html.theme--Orange .pagination li a:hover { background: #d35400; border-color: #
 html.theme--Orange .pagination > .active > a, html.theme--Orange .pagination > .active > span, html.theme--Orange .pagination > .active > a:hover, html.theme--Orange .pagination > .active > span:hover, html.theme--Orange .pagination > .active > a:focus, html.theme--Orange .pagination > .active > span:focus { border-color: #e67e22; background: #e67e22; }
 html.theme--Orange .pager li > a:hover, html.theme--Orange .pager li > a:focus { background: #d35400; border-color: #d35400; }
 html.theme--Orange .sidebar-nav-v1 ul li:hover a, html.theme--Orange .sidebar-nav-v1 ul li.active a { color: #e67e22; }
-html.theme--Orange .btn-u { background: #e67e22; }
+html.theme--Orange .btn-u { background: #e67e22; color: #fff; }
 html.theme--Orange .btn-u:hover, html.theme--Orange .btn-u:focus, html.theme--Orange .btn-u:active, html.theme--Orange .btn-u.active, html.theme--Orange .open .dropdown-toggle.btn-u { background: #d35400; }
 html.theme--Orange .btn-u-split.dropdown-toggle { border-left-color: #d35400; }
 html.theme--Orange .btn-u.btn-brd { border-color: #e67e22; }
@@ -278,6 +284,7 @@ html.theme--Orange .CommunityFeed .profile i.expand-list.active { color: #e67e22
 html.theme--Orange .CommunityFeed #palist a.curr i.expand-list { color: #e67e22; border-color: #e67e22; }
 html.theme--Orange .CommunityFeed #palist a.curr:after { color: #e67e22; }
 html.theme--Orange .CommunityFeedNavigation .menu-item-link a:hover { color: #e67e22; }
+html.theme--Orange .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Orange .CommunityResourceDialog .icon:hover { color: #e67e22; border-color: #e67e22; }
 html.theme--Orange .CommunityShare .addGroups { color: #e67e22 !important; }
 html.theme--Orange .CommunityTagSelector .panel-link .panel-heading { color: #e67e22; }
@@ -288,6 +295,8 @@ html.theme--Orange .CommunityGroupCreate .row .bPageBlock { border-top-color: #e
 html.theme--Orange .CommunityGroupCreate .row.u-page-block { border-top-color: #e67e22; }
 html.theme--Orange .CommunityGroupCreate .nameok { color: #e67e22; }
 html.theme--Orange .CommunityGroupManager .fa.fa-map-marker { color: #e67e22; }
+html.theme--Orange .CommunityGroups.profile .name-location span i { color: #e67e22; }
+html.theme--Orange .CommunityGroups .share-list li.gr-plus a, html.theme--Orange .CommunityGroups .share-list li.bl-plus a { color: #e67e22; }
 html.theme--Orange .CommunityNewsDetail .row.u-page-block { border-top-color: #e67e22; }
 html.theme--Orange .CommunityNewsEdit .row .bPageBlock { border-top-color: #e67e22; }
 html.theme--Orange .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #e67e22 !important; }
@@ -313,7 +322,7 @@ html.theme--Red .pagination li a:hover { background: #c0392b; border-color: #c03
 html.theme--Red .pagination > .active > a, html.theme--Red .pagination > .active > span, html.theme--Red .pagination > .active > a:hover, html.theme--Red .pagination > .active > span:hover, html.theme--Red .pagination > .active > a:focus, html.theme--Red .pagination > .active > span:focus { border-color: #e74c3c; background: #e74c3c; }
 html.theme--Red .pager li > a:hover, html.theme--Red .pager li > a:focus { background: #c0392b; border-color: #c0392b; }
 html.theme--Red .sidebar-nav-v1 ul li:hover a, html.theme--Red .sidebar-nav-v1 ul li.active a { color: #e74c3c; }
-html.theme--Red .btn-u { background: #e74c3c; }
+html.theme--Red .btn-u { background: #e74c3c; color: #fff; }
 html.theme--Red .btn-u:hover, html.theme--Red .btn-u:focus, html.theme--Red .btn-u:active, html.theme--Red .btn-u.active, html.theme--Red .open .dropdown-toggle.btn-u { background: #c0392b; }
 html.theme--Red .btn-u-split.dropdown-toggle { border-left-color: #c0392b; }
 html.theme--Red .btn-u.btn-brd { border-color: #e74c3c; }
@@ -429,6 +438,7 @@ html.theme--Red .CommunityFeed .profile i.expand-list.active { color: #e74c3c; b
 html.theme--Red .CommunityFeed #palist a.curr i.expand-list { color: #e74c3c; border-color: #e74c3c; }
 html.theme--Red .CommunityFeed #palist a.curr:after { color: #e74c3c; }
 html.theme--Red .CommunityFeedNavigation .menu-item-link a:hover { color: #e74c3c; }
+html.theme--Red .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Red .CommunityResourceDialog .icon:hover { color: #e74c3c; border-color: #e74c3c; }
 html.theme--Red .CommunityShare .addGroups { color: #e74c3c !important; }
 html.theme--Red .CommunityTagSelector .panel-link .panel-heading { color: #e74c3c; }
@@ -439,6 +449,8 @@ html.theme--Red .CommunityGroupCreate .row .bPageBlock { border-top-color: #e74c
 html.theme--Red .CommunityGroupCreate .row.u-page-block { border-top-color: #e74c3c; }
 html.theme--Red .CommunityGroupCreate .nameok { color: #e74c3c; }
 html.theme--Red .CommunityGroupManager .fa.fa-map-marker { color: #e74c3c; }
+html.theme--Red .CommunityGroups.profile .name-location span i { color: #e74c3c; }
+html.theme--Red .CommunityGroups .share-list li.gr-plus a, html.theme--Red .CommunityGroups .share-list li.bl-plus a { color: #e74c3c; }
 html.theme--Red .CommunityNewsDetail .row.u-page-block { border-top-color: #e74c3c; }
 html.theme--Red .CommunityNewsEdit .row .bPageBlock { border-top-color: #e74c3c; }
 html.theme--Red .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #e74c3c !important; }
@@ -464,7 +476,7 @@ html.theme--Light .pagination li a:hover { background: #7f8c8d; border-color: #7
 html.theme--Light .pagination > .active > a, html.theme--Light .pagination > .active > span, html.theme--Light .pagination > .active > a:hover, html.theme--Light .pagination > .active > span:hover, html.theme--Light .pagination > .active > a:focus, html.theme--Light .pagination > .active > span:focus { border-color: #95a5a6; background: #95a5a6; }
 html.theme--Light .pager li > a:hover, html.theme--Light .pager li > a:focus { background: #7f8c8d; border-color: #7f8c8d; }
 html.theme--Light .sidebar-nav-v1 ul li:hover a, html.theme--Light .sidebar-nav-v1 ul li.active a { color: #95a5a6; }
-html.theme--Light .btn-u { background: #95a5a6; }
+html.theme--Light .btn-u { background: #95a5a6; color: #fff; }
 html.theme--Light .btn-u:hover, html.theme--Light .btn-u:focus, html.theme--Light .btn-u:active, html.theme--Light .btn-u.active, html.theme--Light .open .dropdown-toggle.btn-u { background: #7f8c8d; }
 html.theme--Light .btn-u-split.dropdown-toggle { border-left-color: #7f8c8d; }
 html.theme--Light .btn-u.btn-brd { border-color: #95a5a6; }
@@ -580,6 +592,7 @@ html.theme--Light .CommunityFeed .profile i.expand-list.active { color: #95a5a6;
 html.theme--Light .CommunityFeed #palist a.curr i.expand-list { color: #95a5a6; border-color: #95a5a6; }
 html.theme--Light .CommunityFeed #palist a.curr:after { color: #95a5a6; }
 html.theme--Light .CommunityFeedNavigation .menu-item-link a:hover { color: #95a5a6; }
+html.theme--Light .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Light .CommunityResourceDialog .icon:hover { color: #95a5a6; border-color: #95a5a6; }
 html.theme--Light .CommunityShare .addGroups { color: #95a5a6 !important; }
 html.theme--Light .CommunityTagSelector .panel-link .panel-heading { color: #95a5a6; }
@@ -590,6 +603,8 @@ html.theme--Light .CommunityGroupCreate .row .bPageBlock { border-top-color: #95
 html.theme--Light .CommunityGroupCreate .row.u-page-block { border-top-color: #95a5a6; }
 html.theme--Light .CommunityGroupCreate .nameok { color: #95a5a6; }
 html.theme--Light .CommunityGroupManager .fa.fa-map-marker { color: #95a5a6; }
+html.theme--Light .CommunityGroups.profile .name-location span i { color: #95a5a6; }
+html.theme--Light .CommunityGroups .share-list li.gr-plus a, html.theme--Light .CommunityGroups .share-list li.bl-plus a { color: #95a5a6; }
 html.theme--Light .CommunityNewsDetail .row.u-page-block { border-top-color: #95a5a6; }
 html.theme--Light .CommunityNewsEdit .row .bPageBlock { border-top-color: #95a5a6; }
 html.theme--Light .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #95a5a6 !important; }
@@ -615,7 +630,7 @@ html.theme--Purple .pagination li a:hover { background: #814fb5; border-color: #
 html.theme--Purple .pagination > .active > a, html.theme--Purple .pagination > .active > span, html.theme--Purple .pagination > .active > a:hover, html.theme--Purple .pagination > .active > span:hover, html.theme--Purple .pagination > .active > a:focus, html.theme--Purple .pagination > .active > span:focus { border-color: #9b6bcc; background: #9b6bcc; }
 html.theme--Purple .pager li > a:hover, html.theme--Purple .pager li > a:focus { background: #814fb5; border-color: #814fb5; }
 html.theme--Purple .sidebar-nav-v1 ul li:hover a, html.theme--Purple .sidebar-nav-v1 ul li.active a { color: #9b6bcc; }
-html.theme--Purple .btn-u { background: #9b6bcc; }
+html.theme--Purple .btn-u { background: #9b6bcc; color: #fff; }
 html.theme--Purple .btn-u:hover, html.theme--Purple .btn-u:focus, html.theme--Purple .btn-u:active, html.theme--Purple .btn-u.active, html.theme--Purple .open .dropdown-toggle.btn-u { background: #814fb5; }
 html.theme--Purple .btn-u-split.dropdown-toggle { border-left-color: #814fb5; }
 html.theme--Purple .btn-u.btn-brd { border-color: #9b6bcc; }
@@ -731,6 +746,7 @@ html.theme--Purple .CommunityFeed .profile i.expand-list.active { color: #9b6bcc
 html.theme--Purple .CommunityFeed #palist a.curr i.expand-list { color: #9b6bcc; border-color: #9b6bcc; }
 html.theme--Purple .CommunityFeed #palist a.curr:after { color: #9b6bcc; }
 html.theme--Purple .CommunityFeedNavigation .menu-item-link a:hover { color: #9b6bcc; }
+html.theme--Purple .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Purple .CommunityResourceDialog .icon:hover { color: #9b6bcc; border-color: #9b6bcc; }
 html.theme--Purple .CommunityShare .addGroups { color: #9b6bcc !important; }
 html.theme--Purple .CommunityTagSelector .panel-link .panel-heading { color: #9b6bcc; }
@@ -741,6 +757,8 @@ html.theme--Purple .CommunityGroupCreate .row .bPageBlock { border-top-color: #9
 html.theme--Purple .CommunityGroupCreate .row.u-page-block { border-top-color: #9b6bcc; }
 html.theme--Purple .CommunityGroupCreate .nameok { color: #9b6bcc; }
 html.theme--Purple .CommunityGroupManager .fa.fa-map-marker { color: #9b6bcc; }
+html.theme--Purple .CommunityGroups.profile .name-location span i { color: #9b6bcc; }
+html.theme--Purple .CommunityGroups .share-list li.gr-plus a, html.theme--Purple .CommunityGroups .share-list li.bl-plus a { color: #9b6bcc; }
 html.theme--Purple .CommunityNewsDetail .row.u-page-block { border-top-color: #9b6bcc; }
 html.theme--Purple .CommunityNewsEdit .row .bPageBlock { border-top-color: #9b6bcc; }
 html.theme--Purple .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #9b6bcc !important; }
@@ -766,7 +784,7 @@ html.theme--Aqua .pagination li a:hover { background: #26bac8; border-color: #26
 html.theme--Aqua .pagination > .active > a, html.theme--Aqua .pagination > .active > span, html.theme--Aqua .pagination > .active > a:hover, html.theme--Aqua .pagination > .active > span:hover, html.theme--Aqua .pagination > .active > a:focus, html.theme--Aqua .pagination > .active > span:focus { border-color: #27d7e7; background: #27d7e7; }
 html.theme--Aqua .pager li > a:hover, html.theme--Aqua .pager li > a:focus { background: #26bac8; border-color: #26bac8; }
 html.theme--Aqua .sidebar-nav-v1 ul li:hover a, html.theme--Aqua .sidebar-nav-v1 ul li.active a { color: #27d7e7; }
-html.theme--Aqua .btn-u { background: #27d7e7; }
+html.theme--Aqua .btn-u { background: #27d7e7; color: #fff; }
 html.theme--Aqua .btn-u:hover, html.theme--Aqua .btn-u:focus, html.theme--Aqua .btn-u:active, html.theme--Aqua .btn-u.active, html.theme--Aqua .open .dropdown-toggle.btn-u { background: #26bac8; }
 html.theme--Aqua .btn-u-split.dropdown-toggle { border-left-color: #26bac8; }
 html.theme--Aqua .btn-u.btn-brd { border-color: #27d7e7; }
@@ -882,6 +900,7 @@ html.theme--Aqua .CommunityFeed .profile i.expand-list.active { color: #27d7e7; 
 html.theme--Aqua .CommunityFeed #palist a.curr i.expand-list { color: #27d7e7; border-color: #27d7e7; }
 html.theme--Aqua .CommunityFeed #palist a.curr:after { color: #27d7e7; }
 html.theme--Aqua .CommunityFeedNavigation .menu-item-link a:hover { color: #27d7e7; }
+html.theme--Aqua .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Aqua .CommunityResourceDialog .icon:hover { color: #27d7e7; border-color: #27d7e7; }
 html.theme--Aqua .CommunityShare .addGroups { color: #27d7e7 !important; }
 html.theme--Aqua .CommunityTagSelector .panel-link .panel-heading { color: #27d7e7; }
@@ -892,6 +911,8 @@ html.theme--Aqua .CommunityGroupCreate .row .bPageBlock { border-top-color: #27d
 html.theme--Aqua .CommunityGroupCreate .row.u-page-block { border-top-color: #27d7e7; }
 html.theme--Aqua .CommunityGroupCreate .nameok { color: #27d7e7; }
 html.theme--Aqua .CommunityGroupManager .fa.fa-map-marker { color: #27d7e7; }
+html.theme--Aqua .CommunityGroups.profile .name-location span i { color: #27d7e7; }
+html.theme--Aqua .CommunityGroups .share-list li.gr-plus a, html.theme--Aqua .CommunityGroups .share-list li.bl-plus a { color: #27d7e7; }
 html.theme--Aqua .CommunityNewsDetail .row.u-page-block { border-top-color: #27d7e7; }
 html.theme--Aqua .CommunityNewsEdit .row .bPageBlock { border-top-color: #27d7e7; }
 html.theme--Aqua .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #27d7e7 !important; }
@@ -917,7 +938,7 @@ html.theme--Brown .pagination li a:hover { background: #81674b; border-color: #8
 html.theme--Brown .pagination > .active > a, html.theme--Brown .pagination > .active > span, html.theme--Brown .pagination > .active > a:hover, html.theme--Brown .pagination > .active > span:hover, html.theme--Brown .pagination > .active > a:focus, html.theme--Brown .pagination > .active > span:focus { border-color: #9c8061; background: #9c8061; }
 html.theme--Brown .pager li > a:hover, html.theme--Brown .pager li > a:focus { background: #81674b; border-color: #81674b; }
 html.theme--Brown .sidebar-nav-v1 ul li:hover a, html.theme--Brown .sidebar-nav-v1 ul li.active a { color: #9c8061; }
-html.theme--Brown .btn-u { background: #9c8061; }
+html.theme--Brown .btn-u { background: #9c8061; color: #fff; }
 html.theme--Brown .btn-u:hover, html.theme--Brown .btn-u:focus, html.theme--Brown .btn-u:active, html.theme--Brown .btn-u.active, html.theme--Brown .open .dropdown-toggle.btn-u { background: #81674b; }
 html.theme--Brown .btn-u-split.dropdown-toggle { border-left-color: #81674b; }
 html.theme--Brown .btn-u.btn-brd { border-color: #9c8061; }
@@ -1033,6 +1054,7 @@ html.theme--Brown .CommunityFeed .profile i.expand-list.active { color: #9c8061;
 html.theme--Brown .CommunityFeed #palist a.curr i.expand-list { color: #9c8061; border-color: #9c8061; }
 html.theme--Brown .CommunityFeed #palist a.curr:after { color: #9c8061; }
 html.theme--Brown .CommunityFeedNavigation .menu-item-link a:hover { color: #9c8061; }
+html.theme--Brown .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Brown .CommunityResourceDialog .icon:hover { color: #9c8061; border-color: #9c8061; }
 html.theme--Brown .CommunityShare .addGroups { color: #9c8061 !important; }
 html.theme--Brown .CommunityTagSelector .panel-link .panel-heading { color: #9c8061; }
@@ -1043,6 +1065,8 @@ html.theme--Brown .CommunityGroupCreate .row .bPageBlock { border-top-color: #9c
 html.theme--Brown .CommunityGroupCreate .row.u-page-block { border-top-color: #9c8061; }
 html.theme--Brown .CommunityGroupCreate .nameok { color: #9c8061; }
 html.theme--Brown .CommunityGroupManager .fa.fa-map-marker { color: #9c8061; }
+html.theme--Brown .CommunityGroups.profile .name-location span i { color: #9c8061; }
+html.theme--Brown .CommunityGroups .share-list li.gr-plus a, html.theme--Brown .CommunityGroups .share-list li.bl-plus a { color: #9c8061; }
 html.theme--Brown .CommunityNewsDetail .row.u-page-block { border-top-color: #9c8061; }
 html.theme--Brown .CommunityNewsEdit .row .bPageBlock { border-top-color: #9c8061; }
 html.theme--Brown .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #9c8061 !important; }
@@ -1068,7 +1092,7 @@ html.theme--Dark-Blue .pagination li a:hover { background: #324c80; border-color
 html.theme--Dark-Blue .pagination > .active > a, html.theme--Dark-Blue .pagination > .active > span, html.theme--Dark-Blue .pagination > .active > a:hover, html.theme--Dark-Blue .pagination > .active > span:hover, html.theme--Dark-Blue .pagination > .active > a:focus, html.theme--Dark-Blue .pagination > .active > span:focus { border-color: #4765a0; background: #4765a0; }
 html.theme--Dark-Blue .pager li > a:hover, html.theme--Dark-Blue .pager li > a:focus { background: #324c80; border-color: #324c80; }
 html.theme--Dark-Blue .sidebar-nav-v1 ul li:hover a, html.theme--Dark-Blue .sidebar-nav-v1 ul li.active a { color: #4765a0; }
-html.theme--Dark-Blue .btn-u { background: #4765a0; }
+html.theme--Dark-Blue .btn-u { background: #4765a0; color: #fff; }
 html.theme--Dark-Blue .btn-u:hover, html.theme--Dark-Blue .btn-u:focus, html.theme--Dark-Blue .btn-u:active, html.theme--Dark-Blue .btn-u.active, html.theme--Dark-Blue .open .dropdown-toggle.btn-u { background: #324c80; }
 html.theme--Dark-Blue .btn-u-split.dropdown-toggle { border-left-color: #324c80; }
 html.theme--Dark-Blue .btn-u.btn-brd { border-color: #4765a0; }
@@ -1184,6 +1208,7 @@ html.theme--Dark-Blue .CommunityFeed .profile i.expand-list.active { color: #476
 html.theme--Dark-Blue .CommunityFeed #palist a.curr i.expand-list { color: #4765a0; border-color: #4765a0; }
 html.theme--Dark-Blue .CommunityFeed #palist a.curr:after { color: #4765a0; }
 html.theme--Dark-Blue .CommunityFeedNavigation .menu-item-link a:hover { color: #4765a0; }
+html.theme--Dark-Blue .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Dark-Blue .CommunityResourceDialog .icon:hover { color: #4765a0; border-color: #4765a0; }
 html.theme--Dark-Blue .CommunityShare .addGroups { color: #4765a0 !important; }
 html.theme--Dark-Blue .CommunityTagSelector .panel-link .panel-heading { color: #4765a0; }
@@ -1194,6 +1219,8 @@ html.theme--Dark-Blue .CommunityGroupCreate .row .bPageBlock { border-top-color:
 html.theme--Dark-Blue .CommunityGroupCreate .row.u-page-block { border-top-color: #4765a0; }
 html.theme--Dark-Blue .CommunityGroupCreate .nameok { color: #4765a0; }
 html.theme--Dark-Blue .CommunityGroupManager .fa.fa-map-marker { color: #4765a0; }
+html.theme--Dark-Blue .CommunityGroups.profile .name-location span i { color: #4765a0; }
+html.theme--Dark-Blue .CommunityGroups .share-list li.gr-plus a, html.theme--Dark-Blue .CommunityGroups .share-list li.bl-plus a { color: #4765a0; }
 html.theme--Dark-Blue .CommunityNewsDetail .row.u-page-block { border-top-color: #4765a0; }
 html.theme--Dark-Blue .CommunityNewsEdit .row .bPageBlock { border-top-color: #4765a0; }
 html.theme--Dark-Blue .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #4765a0 !important; }
@@ -1219,7 +1246,7 @@ html.theme--Light-Green .pagination li a:hover { background: #59b795; border-col
 html.theme--Light-Green .pagination > .active > a, html.theme--Light-Green .pagination > .active > span, html.theme--Light-Green .pagination > .active > a:hover, html.theme--Light-Green .pagination > .active > span:hover, html.theme--Light-Green .pagination > .active > a:focus, html.theme--Light-Green .pagination > .active > span:focus { border-color: #79d5b3; background: #79d5b3; }
 html.theme--Light-Green .pager li > a:hover, html.theme--Light-Green .pager li > a:focus { background: #59b795; border-color: #59b795; }
 html.theme--Light-Green .sidebar-nav-v1 ul li:hover a, html.theme--Light-Green .sidebar-nav-v1 ul li.active a { color: #79d5b3; }
-html.theme--Light-Green .btn-u { background: #79d5b3; }
+html.theme--Light-Green .btn-u { background: #79d5b3; color: #fff; }
 html.theme--Light-Green .btn-u:hover, html.theme--Light-Green .btn-u:focus, html.theme--Light-Green .btn-u:active, html.theme--Light-Green .btn-u.active, html.theme--Light-Green .open .dropdown-toggle.btn-u { background: #59b795; }
 html.theme--Light-Green .btn-u-split.dropdown-toggle { border-left-color: #59b795; }
 html.theme--Light-Green .btn-u.btn-brd { border-color: #79d5b3; }
@@ -1335,6 +1362,7 @@ html.theme--Light-Green .CommunityFeed .profile i.expand-list.active { color: #7
 html.theme--Light-Green .CommunityFeed #palist a.curr i.expand-list { color: #79d5b3; border-color: #79d5b3; }
 html.theme--Light-Green .CommunityFeed #palist a.curr:after { color: #79d5b3; }
 html.theme--Light-Green .CommunityFeedNavigation .menu-item-link a:hover { color: #79d5b3; }
+html.theme--Light-Green .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Light-Green .CommunityResourceDialog .icon:hover { color: #79d5b3; border-color: #79d5b3; }
 html.theme--Light-Green .CommunityShare .addGroups { color: #79d5b3 !important; }
 html.theme--Light-Green .CommunityTagSelector .panel-link .panel-heading { color: #79d5b3; }
@@ -1345,6 +1373,8 @@ html.theme--Light-Green .CommunityGroupCreate .row .bPageBlock { border-top-colo
 html.theme--Light-Green .CommunityGroupCreate .row.u-page-block { border-top-color: #79d5b3; }
 html.theme--Light-Green .CommunityGroupCreate .nameok { color: #79d5b3; }
 html.theme--Light-Green .CommunityGroupManager .fa.fa-map-marker { color: #79d5b3; }
+html.theme--Light-Green .CommunityGroups.profile .name-location span i { color: #79d5b3; }
+html.theme--Light-Green .CommunityGroups .share-list li.gr-plus a, html.theme--Light-Green .CommunityGroups .share-list li.bl-plus a { color: #79d5b3; }
 html.theme--Light-Green .CommunityNewsDetail .row.u-page-block { border-top-color: #79d5b3; }
 html.theme--Light-Green .CommunityNewsEdit .row .bPageBlock { border-top-color: #79d5b3; }
 html.theme--Light-Green .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #79d5b3 !important; }
@@ -1370,7 +1400,7 @@ html.theme--Dark-Red .pagination li a:hover { background: #a10f2b; border-color:
 html.theme--Dark-Red .pagination > .active > a, html.theme--Dark-Red .pagination > .active > span, html.theme--Dark-Red .pagination > .active > a:hover, html.theme--Dark-Red .pagination > .active > span:hover, html.theme--Dark-Red .pagination > .active > a:focus, html.theme--Dark-Red .pagination > .active > span:focus { border-color: #b61332; background: #b61332; }
 html.theme--Dark-Red .pager li > a:hover, html.theme--Dark-Red .pager li > a:focus { background: #a10f2b; border-color: #a10f2b; }
 html.theme--Dark-Red .sidebar-nav-v1 ul li:hover a, html.theme--Dark-Red .sidebar-nav-v1 ul li.active a { color: #b61332; }
-html.theme--Dark-Red .btn-u { background: #b61332; }
+html.theme--Dark-Red .btn-u { background: #b61332; color: #fff; }
 html.theme--Dark-Red .btn-u:hover, html.theme--Dark-Red .btn-u:focus, html.theme--Dark-Red .btn-u:active, html.theme--Dark-Red .btn-u.active, html.theme--Dark-Red .open .dropdown-toggle.btn-u { background: #a10f2b; }
 html.theme--Dark-Red .btn-u-split.dropdown-toggle { border-left-color: #a10f2b; }
 html.theme--Dark-Red .btn-u.btn-brd { border-color: #b61332; }
@@ -1486,6 +1516,7 @@ html.theme--Dark-Red .CommunityFeed .profile i.expand-list.active { color: #b613
 html.theme--Dark-Red .CommunityFeed #palist a.curr i.expand-list { color: #b61332; border-color: #b61332; }
 html.theme--Dark-Red .CommunityFeed #palist a.curr:after { color: #b61332; }
 html.theme--Dark-Red .CommunityFeedNavigation .menu-item-link a:hover { color: #b61332; }
+html.theme--Dark-Red .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Dark-Red .CommunityResourceDialog .icon:hover { color: #b61332; border-color: #b61332; }
 html.theme--Dark-Red .CommunityShare .addGroups { color: #b61332 !important; }
 html.theme--Dark-Red .CommunityTagSelector .panel-link .panel-heading { color: #b61332; }
@@ -1496,6 +1527,8 @@ html.theme--Dark-Red .CommunityGroupCreate .row .bPageBlock { border-top-color: 
 html.theme--Dark-Red .CommunityGroupCreate .row.u-page-block { border-top-color: #b61332; }
 html.theme--Dark-Red .CommunityGroupCreate .nameok { color: #b61332; }
 html.theme--Dark-Red .CommunityGroupManager .fa.fa-map-marker { color: #b61332; }
+html.theme--Dark-Red .CommunityGroups.profile .name-location span i { color: #b61332; }
+html.theme--Dark-Red .CommunityGroups .share-list li.gr-plus a, html.theme--Dark-Red .CommunityGroups .share-list li.bl-plus a { color: #b61332; }
 html.theme--Dark-Red .CommunityNewsDetail .row.u-page-block { border-top-color: #b61332; }
 html.theme--Dark-Red .CommunityNewsEdit .row .bPageBlock { border-top-color: #b61332; }
 html.theme--Dark-Red .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #b61332 !important; }
@@ -1521,7 +1554,7 @@ html.theme--Teal .pagination li a:hover { background: #18ba9b; border-color: #18
 html.theme--Teal .pagination > .active > a, html.theme--Teal .pagination > .active > span, html.theme--Teal .pagination > .active > a:hover, html.theme--Teal .pagination > .active > span:hover, html.theme--Teal .pagination > .active > a:focus, html.theme--Teal .pagination > .active > span:focus { border-color: #2cd5b6; background: #2cd5b6; }
 html.theme--Teal .pager li > a:hover, html.theme--Teal .pager li > a:focus { background: #18ba9b; border-color: #18ba9b; }
 html.theme--Teal .sidebar-nav-v1 ul li:hover a, html.theme--Teal .sidebar-nav-v1 ul li.active a { color: #2cd5b6; }
-html.theme--Teal .btn-u { background: #2cd5b6; }
+html.theme--Teal .btn-u { background: #2cd5b6; color: #fff; }
 html.theme--Teal .btn-u:hover, html.theme--Teal .btn-u:focus, html.theme--Teal .btn-u:active, html.theme--Teal .btn-u.active, html.theme--Teal .open .dropdown-toggle.btn-u { background: #18ba9b; }
 html.theme--Teal .btn-u-split.dropdown-toggle { border-left-color: #18ba9b; }
 html.theme--Teal .btn-u.btn-brd { border-color: #2cd5b6; }
@@ -1637,6 +1670,7 @@ html.theme--Teal .CommunityFeed .profile i.expand-list.active { color: #2cd5b6; 
 html.theme--Teal .CommunityFeed #palist a.curr i.expand-list { color: #2cd5b6; border-color: #2cd5b6; }
 html.theme--Teal .CommunityFeed #palist a.curr:after { color: #2cd5b6; }
 html.theme--Teal .CommunityFeedNavigation .menu-item-link a:hover { color: #2cd5b6; }
+html.theme--Teal .CommunityFeedNavigation .list-group-item.active a:hover { color: #fff; }
 html.theme--Teal .CommunityResourceDialog .icon:hover { color: #2cd5b6; border-color: #2cd5b6; }
 html.theme--Teal .CommunityShare .addGroups { color: #2cd5b6 !important; }
 html.theme--Teal .CommunityTagSelector .panel-link .panel-heading { color: #2cd5b6; }
@@ -1647,6 +1681,8 @@ html.theme--Teal .CommunityGroupCreate .row .bPageBlock { border-top-color: #2cd
 html.theme--Teal .CommunityGroupCreate .row.u-page-block { border-top-color: #2cd5b6; }
 html.theme--Teal .CommunityGroupCreate .nameok { color: #2cd5b6; }
 html.theme--Teal .CommunityGroupManager .fa.fa-map-marker { color: #2cd5b6; }
+html.theme--Teal .CommunityGroups.profile .name-location span i { color: #2cd5b6; }
+html.theme--Teal .CommunityGroups .share-list li.gr-plus a, html.theme--Teal .CommunityGroups .share-list li.bl-plus a { color: #2cd5b6; }
 html.theme--Teal .CommunityNewsDetail .row.u-page-block { border-top-color: #2cd5b6; }
 html.theme--Teal .CommunityNewsEdit .row .bPageBlock { border-top-color: #2cd5b6; }
 html.theme--Teal .CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #2cd5b6 !important; }

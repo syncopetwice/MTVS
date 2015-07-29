@@ -4,6 +4,9 @@ Source: SCSS
 Appointment: inline styles from pages/components
 --------------------------------------------- */
 /* ------------
+Base components
+------------ */
+/* ------------
 	Base Styles
 ------------ */
 .margin-top-0 { margin-top: 0; }
@@ -313,6 +316,7 @@ Pages
 .CommunityProfilePage .p-st-blk { display: inline-block; width: 40px; text-align: right; vertical-align: middle; height: 24px; margin-top: -12px; }
 .CommunityProfilePage .p-chb { font-size: 1.3em; color: #FF7F50; font-weight: bold; vertical-align: middle; }
 .CommunityProfilePage .fa.fa-spinner.fa-pulse { font-size: 2.5em; }
+.CommunityProfilePage .sky-form header { padding: 10px 0 15px 0; }
 .CommunityProfilePage #settings .sky-form .toggle i.red-btn { border-color: #ff0024 !important; }
 .CommunityProfilePage #settings .sky-form .toggle i.red-btn:before { background-color: #ff0024; }
 .CommunityProfilePage #settings .sky-form .toggle i.red-btn:after { color: #ff0024; }

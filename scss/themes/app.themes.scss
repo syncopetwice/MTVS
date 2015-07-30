@@ -15,19 +15,18 @@ $themes:
 	("theme--Dark-Red", #b61332, #a10f2b),
 	("theme--Teal", #2cd5b6, #18ba9b);
 
-html {
+
+// Mixin
+
+@mixin theme($name, $color, $hover) {
+	html.#{$name} {
+
 	a.btn-u {
 		color: #fff;
 		&:hover {
 			color: #fff;
 		}
 	}
-}
-
-// Mixin
-
-@mixin theme($name, $color, $hover) {
-	html.#{$name} {
 
 	// Files ::::::::::::::::::::::
 
@@ -85,6 +84,7 @@ html {
 				.pager li > a:focus {
 					background: $hover;
 					border-color: $hover;
+					color: #fff;
 				}
 				.sidebar-nav-v1 ul li:hover a,
 				.sidebar-nav-v1 ul li.active a {
@@ -367,6 +367,7 @@ html {
 				}
 				.thumbnail-style a.btn-more:hover {
 					box-shadow: 0 0 0 2px $hover;
+					color: #fff;
 				}
 				.service-alternative .service:hover {
 					background: $color;

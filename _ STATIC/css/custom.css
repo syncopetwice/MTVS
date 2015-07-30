@@ -1,0 +1,143 @@
+/* Add here all your css styles (customizations) */
+.tab-v1>.nav-tabs>li>a {
+	margin-right: 0;
+}
+@media (min-width: 768px){
+	.modal-dialog {
+		margin: 90px auto;
+	}
+}
+div#libraryimagescontent img {
+	float: left;
+}
+div#libraryimagescontent .imageselector.selected {
+	border: 1px solid red;
+}
+div#libraryimagescontent a.btn-u {
+	color: white;
+}
+.maxheight300 {
+	max-height: 300px;
+}
+body.modal-open {
+	padding-right: 0 !important;
+	overflow: auto;
+}
+li.gr-plus,
+li.bl-plus,
+li.or-plus {
+    float: right;
+}
+.share-list li.gr-plus i,
+.share-list li.gr-plus a {
+    color: #72c02c;
+}
+.share-list li.bl-plus i,
+.share-list li.bl-plus a {
+    color: #3498db;
+}
+.share-list li.or-plus i,
+.share-list li.or-plus a {
+    color: #e9b605;
+}
+.share-list li a {
+    cursor: pointer;
+}
+.blog-twitter .blog-twitter-inner {
+	overflow: hidden;
+}
+td.file-actions {
+	width: 165px;
+}
+.file-actions i {
+	min-width: 16px;
+	text-align: center;
+}
+.file-actions i.fa {
+	color: #777;
+	transition: color 0.3s ease;
+	font-size: 15px;
+	margin-right: 2px;
+}
+.file-actions i.fa:hover {
+	color: #72c02c;
+	cursor: pointer;
+}
+.file-actions i.fa.active, .fa.fa-plus-circle.active {
+	color: #72c02c;
+}
+.list-inline .dropdown-menu>li>a {
+	border: none;
+}
+.addGroups{
+	text-decoration: none !important;
+	color: #72c02c !important;
+}
+.m-status {
+	color: white;
+	top: 40%;
+	position: absolute;
+	font-size: 6em;
+	margin-top: -38px;
+	left: 50%;
+	margin-left: -38px;
+}
+.div-like-input {
+	cursor: text;
+	padding: 5px 5px 5px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	box-sizing: border-box;
+	color: rgba(0, 0, 0, 0.75);
+	transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	min-height: 39px;
+}
+.groups-container .item {
+	text-decoration: none;
+	white-space: nowrap;
+	border: 1px solid #d4dadc;
+	padding: 2px 5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #eff7fa;
+	color: #015ba7;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	float: left;
+	line-height: normal;
+}
+.groups-container {
+	line-height: 22px;
+}
+.div-like-input input.input-inviz {
+	margin-bottom: 0px;
+	display: block;
+	width: 200px;
+	padding: 2px 5px;
+	font-size: 12px;
+	height: 24px;
+	border: none;
+	box-shadow: none;
+}
+.input-inviz:focus {
+	background: inherit;
+}
+.groups-container a.remove img {
+	background: transparent url(/img/chatter/message_item_x.png) no-repeat scroll left top;
+	width: 8px;
+	height: 8px;
+	margin-bottom: 4px;
+}
+.groups-container a.remove:hover img {
+	background-position: 0 50%;
+}
+.tags-container a {
+	margin-left: 5px;
+}
+.div-like-input input.input-inviz {
+	float: left;
+	display: inline-block;
+}

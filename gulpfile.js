@@ -64,7 +64,7 @@ var
 
 	gulp.task('copy', function(){
 		return gulp.src(staticResources, { base:'.'})
-			.pipe(gulp.dest('C:\\Maven\\Motivis\\resource-bundles\\UITEST.resource\\'));
+			.pipe(gulp.dest('C:\\Maven\\Motivis Core\\resource-bundles\\UITEST.resource\\'));
 	});
 
 	gulp.task('watch', function() {

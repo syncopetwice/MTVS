@@ -558,8 +558,16 @@ $themes:
 					background-color: $color;
 				}
 			}
-		
-		
+
+		// CommunityEventDetail
+		.CommunityEventDetail {
+			.sky-form {
+				a {
+					color: $color;
+				}
+			}
+		}
+
 		// CommunityFeed_MyMessages
 			.CommunityFeed_MyMessages {
 				.media {

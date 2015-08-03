@@ -135,6 +135,7 @@ html.theme--Blue .CommunityShare .addGroups { color: #3498db !important; }
 html.theme--Blue .CommunityTagSelector .panel-link .panel-heading { color: #3498db; }
 html.theme--Blue .CommunityUserPhoto .user-photo .user-photo-link { background: #2980b9; }
 html.theme--Blue .CommunityDiscover .tooltips.s-tip { background-color: #3498db; }
+html.theme--Blue .CommunityEventDetail .sky-form a { color: #3498db; }
 html.theme--Blue .CommunityFeed_MyMessages .media.conversation:hover { background: #a0cfee; }
 html.theme--Blue .CommunityGroupCreate .row .bPageBlock { border-top-color: #3498db; }
 html.theme--Blue .CommunityGroupCreate .row.u-page-block { border-top-color: #3498db; }
@@ -291,6 +292,7 @@ html.theme--Orange .CommunityShare .addGroups { color: #e67e22 !important; }
 html.theme--Orange .CommunityTagSelector .panel-link .panel-heading { color: #e67e22; }
 html.theme--Orange .CommunityUserPhoto .user-photo .user-photo-link { background: #d35400; }
 html.theme--Orange .CommunityDiscover .tooltips.s-tip { background-color: #e67e22; }
+html.theme--Orange .CommunityEventDetail .sky-form a { color: #e67e22; }
 html.theme--Orange .CommunityFeed_MyMessages .media.conversation:hover { background: #f3c195; }
 html.theme--Orange .CommunityGroupCreate .row .bPageBlock { border-top-color: #e67e22; }
 html.theme--Orange .CommunityGroupCreate .row.u-page-block { border-top-color: #e67e22; }
@@ -447,6 +449,7 @@ html.theme--Red .CommunityShare .addGroups { color: #e74c3c !important; }
 html.theme--Red .CommunityTagSelector .panel-link .panel-heading { color: #e74c3c; }
 html.theme--Red .CommunityUserPhoto .user-photo .user-photo-link { background: #c0392b; }
 html.theme--Red .CommunityDiscover .tooltips.s-tip { background-color: #e74c3c; }
+html.theme--Red .CommunityEventDetail .sky-form a { color: #e74c3c; }
 html.theme--Red .CommunityFeed_MyMessages .media.conversation:hover { background: #f5b4ae; }
 html.theme--Red .CommunityGroupCreate .row .bPageBlock { border-top-color: #e74c3c; }
 html.theme--Red .CommunityGroupCreate .row.u-page-block { border-top-color: #e74c3c; }
@@ -603,6 +606,7 @@ html.theme--Light .CommunityShare .addGroups { color: #95a5a6 !important; }
 html.theme--Light .CommunityTagSelector .panel-link .panel-heading { color: #95a5a6; }
 html.theme--Light .CommunityUserPhoto .user-photo .user-photo-link { background: #7f8c8d; }
 html.theme--Light .CommunityDiscover .tooltips.s-tip { background-color: #95a5a6; }
+html.theme--Light .CommunityEventDetail .sky-form a { color: #95a5a6; }
 html.theme--Light .CommunityFeed_MyMessages .media.conversation:hover { background: #dae0e0; }
 html.theme--Light .CommunityGroupCreate .row .bPageBlock { border-top-color: #95a5a6; }
 html.theme--Light .CommunityGroupCreate .row.u-page-block { border-top-color: #95a5a6; }
@@ -759,6 +763,7 @@ html.theme--Purple .CommunityShare .addGroups { color: #9b6bcc !important; }
 html.theme--Purple .CommunityTagSelector .panel-link .panel-heading { color: #9b6bcc; }
 html.theme--Purple .CommunityUserPhoto .user-photo .user-photo-link { background: #814fb5; }
 html.theme--Purple .CommunityDiscover .tooltips.s-tip { background-color: #9b6bcc; }
+html.theme--Purple .CommunityEventDetail .sky-form a { color: #9b6bcc; }
 html.theme--Purple .CommunityFeed_MyMessages .media.conversation:hover { background: #dbcaed; }
 html.theme--Purple .CommunityGroupCreate .row .bPageBlock { border-top-color: #9b6bcc; }
 html.theme--Purple .CommunityGroupCreate .row.u-page-block { border-top-color: #9b6bcc; }
@@ -915,6 +920,7 @@ html.theme--Aqua .CommunityShare .addGroups { color: #27d7e7 !important; }
 html.theme--Aqua .CommunityTagSelector .panel-link .panel-heading { color: #27d7e7; }
 html.theme--Aqua .CommunityUserPhoto .user-photo .user-photo-link { background: #26bac8; }
 html.theme--Aqua .CommunityDiscover .tooltips.s-tip { background-color: #27d7e7; }
+html.theme--Aqua .CommunityEventDetail .sky-form a { color: #27d7e7; }
 html.theme--Aqua .CommunityFeed_MyMessages .media.conversation:hover { background: #9aecf4; }
 html.theme--Aqua .CommunityGroupCreate .row .bPageBlock { border-top-color: #27d7e7; }
 html.theme--Aqua .CommunityGroupCreate .row.u-page-block { border-top-color: #27d7e7; }
@@ -1071,6 +1077,7 @@ html.theme--Brown .CommunityShare .addGroups { color: #9c8061 !important; }
 html.theme--Brown .CommunityTagSelector .panel-link .panel-heading { color: #9c8061; }
 html.theme--Brown .CommunityUserPhoto .user-photo .user-photo-link { background: #81674b; }
 html.theme--Brown .CommunityDiscover .tooltips.s-tip { background-color: #9c8061; }
+html.theme--Brown .CommunityEventDetail .sky-form a { color: #9c8061; }
 html.theme--Brown .CommunityFeed_MyMessages .media.conversation:hover { background: #cdbfaf; }
 html.theme--Brown .CommunityGroupCreate .row .bPageBlock { border-top-color: #9c8061; }
 html.theme--Brown .CommunityGroupCreate .row.u-page-block { border-top-color: #9c8061; }
@@ -1227,6 +1234,7 @@ html.theme--Dark-Blue .CommunityShare .addGroups { color: #4765a0 !important; }
 html.theme--Dark-Blue .CommunityTagSelector .panel-link .panel-heading { color: #4765a0; }
 html.theme--Dark-Blue .CommunityUserPhoto .user-photo .user-photo-link { background: #324c80; }
 html.theme--Dark-Blue .CommunityDiscover .tooltips.s-tip { background-color: #4765a0; }
+html.theme--Dark-Blue .CommunityEventDetail .sky-form a { color: #4765a0; }
 html.theme--Dark-Blue .CommunityFeed_MyMessages .media.conversation:hover { background: #96aad0; }
 html.theme--Dark-Blue .CommunityGroupCreate .row .bPageBlock { border-top-color: #4765a0; }
 html.theme--Dark-Blue .CommunityGroupCreate .row.u-page-block { border-top-color: #4765a0; }
@@ -1383,6 +1391,7 @@ html.theme--Light-Green .CommunityShare .addGroups { color: #79d5b3 !important; 
 html.theme--Light-Green .CommunityTagSelector .panel-link .panel-heading { color: #79d5b3; }
 html.theme--Light-Green .CommunityUserPhoto .user-photo .user-photo-link { background: #59b795; }
 html.theme--Light-Green .CommunityDiscover .tooltips.s-tip { background-color: #79d5b3; }
+html.theme--Light-Green .CommunityEventDetail .sky-form a { color: #79d5b3; }
 html.theme--Light-Green .CommunityFeed_MyMessages .media.conversation:hover { background: #daf3ea; }
 html.theme--Light-Green .CommunityGroupCreate .row .bPageBlock { border-top-color: #79d5b3; }
 html.theme--Light-Green .CommunityGroupCreate .row.u-page-block { border-top-color: #79d5b3; }
@@ -1539,6 +1548,7 @@ html.theme--Dark-Red .CommunityShare .addGroups { color: #b61332 !important; }
 html.theme--Dark-Red .CommunityTagSelector .panel-link .panel-heading { color: #b61332; }
 html.theme--Dark-Red .CommunityUserPhoto .user-photo .user-photo-link { background: #a10f2b; }
 html.theme--Dark-Red .CommunityDiscover .tooltips.s-tip { background-color: #b61332; }
+html.theme--Dark-Red .CommunityEventDetail .sky-form a { color: #b61332; }
 html.theme--Dark-Red .CommunityFeed_MyMessages .media.conversation:hover { background: #ee5b77; }
 html.theme--Dark-Red .CommunityGroupCreate .row .bPageBlock { border-top-color: #b61332; }
 html.theme--Dark-Red .CommunityGroupCreate .row.u-page-block { border-top-color: #b61332; }
@@ -1695,6 +1705,7 @@ html.theme--Teal .CommunityShare .addGroups { color: #2cd5b6 !important; }
 html.theme--Teal .CommunityTagSelector .panel-link .panel-heading { color: #2cd5b6; }
 html.theme--Teal .CommunityUserPhoto .user-photo .user-photo-link { background: #18ba9b; }
 html.theme--Teal .CommunityDiscover .tooltips.s-tip { background-color: #2cd5b6; }
+html.theme--Teal .CommunityEventDetail .sky-form a { color: #2cd5b6; }
 html.theme--Teal .CommunityFeed_MyMessages .media.conversation:hover { background: #96eadb; }
 html.theme--Teal .CommunityGroupCreate .row .bPageBlock { border-top-color: #2cd5b6; }
 html.theme--Teal .CommunityGroupCreate .row.u-page-block { border-top-color: #2cd5b6; }

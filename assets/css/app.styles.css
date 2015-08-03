@@ -216,6 +216,7 @@ Pages
 .CommunityEventDetail #eventData h3 { margin-bottom: 0px; }
 .CommunityEventDetail #eventData #startEndDate { font-style: italic; }
 .CommunityEventDetail [id*="theform"] { text-align: right; padding-right: 15px; }
+.CommunityEventDetail .sky-form a { color: #72c02c; }
 .CommunityEventDetail .sky-form hr { margin: 6px 0; }
 .CommunityEventDetail .sky-form .dl-horizontal #gCalendar { padding: 0 20px; }
 .CommunityEventDetail .sky-form .dl-horizontal #gCalendar .gCalendar__label { float: left; font-weight: bold; margin-right: 10px; }

@@ -2,6 +2,9 @@
 	CommunityResourceEdit
 ---------------------- */
 .CommunityResourceEdit {
+
+	@import '../mixins/error-message';
+
 	.calert h4 {
 		font-size: 1.25em;
 		margin-top:-5px;
@@ -11,10 +14,7 @@
 		height:20px;
 		color:inherit;
 	}
-	// .requiredBlock {
-	// 	height:36px;
+	// .panel-collapse.collapse {
+	// 	height: 0;
 	// }
-	.panel-collapse.collapse {
-		height: 0;
-	}
 }

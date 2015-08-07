@@ -1,0 +1,402 @@
+/* ---------------------------------------------
+Motivis Styles
+Source: SCSS
+Appointment: inline styles from pages/components
+--------------------------------------------- */
+/* ------------
+Base components
+------------ */
+/* ------------
+	Base Styles
+------------ */
+.margin-top-0 { margin-top: 0; }
+
+.margin-top-5 { margin-top: 5px; }
+
+.margin-top-10 { margin-top: 10px; }
+
+.margin-bottom-0 { margin-bottom: 0; }
+
+.margin-bottom-10 { margin-bottom: 10px; }
+
+.margin-bottom-20 { margin-bottom: 20px; }
+
+.margin-20 { margin: 20px; }
+
+.padding-10 { padding: 10px; }
+
+.padding-left-35 { padding-left: 35px; }
+
+.padding-right-25 { padding-right: 25px; }
+
+.padding-top-15 { padding-top: 15px; }
+
+.padding-top-10 { padding-top: 10px; }
+
+.hidden { display: none; }
+
+.text-align-right { text-align: right; }
+
+.width-20 { width: 20px; }
+
+.width-50 { width: 50px; }
+
+.width-80 { width: 80px; }
+
+.width-90 { width: 90px; }
+
+.width-200 { width: 200px; }
+
+.full-width { width: 100%; }
+
+.height-0 { height: 0; }
+
+.text-align-left { text-align: left; }
+
+.text-decoration-none { text-decoration: none; }
+
+.font-weight-bold { font-weight: bold; }
+
+.cursor-pointer { cursor: pointer; }
+
+.opacity-65 { opacity: 0.65; }
+
+.opacity-75 { opacity: 0.75; }
+
+.vertical-align-top { vertical-align: top; }
+
+/* -----------
+Components
+------------*/
+/* --------------------
+	CommunityAboutGroup 
+-------------------- */
+.CommunityAboutGroup .errorText { padding: 15px 30px; margin-bottom: 20px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+
+/* --------------
+	CommunityFeed
+-------------- */
+.CommunityFeed .profile i.expand-list.active { color: #72c02c; border: 1px solid #72c02c; }
+.CommunityFeed .profile i.expand-list.active:hover { color: #999; border-color: #999; }
+.CommunityFeed .d-comment { height: 2px; border-bottom: 1px solid #ccc; }
+.CommunityFeed .profile i.expand-list { min-width: 24px; }
+.CommunityFeed .profile .media.media-v2 .media.media-v2 { margin-top: 20px; background-color: #eee; padding: 5px 15px; }
+.CommunityFeed .profile .media-body .d-link { border: 1px solid #ddd; padding: 5px 12px; }
+.CommunityFeed .profile .media-body .d-link:hover { background-color: #eee; color: #555; text-decoration: none; }
+.CommunityFeed textarea.form-control { resize: vertical; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list { display: none; background: #fff; border: 1px solid #b2b2b2; position: absolute; z-index: 10000; margin-top: -2px; border-radius: 5px; border-top-right-radius: 0; border-top-left-radius: 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14844); }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list ul { margin: 0; padding: 0; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li { background-color: #fff; padding: 0 5px; margin: 0; width: auto; border-bottom: 1px solid #eee; height: 26px; line-height: 26px; overflow: hidden; cursor: pointer; list-style: none; white-space: nowrap; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li:last-child { border-radius: 5px; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li > img, .CommunityFeed .mentions-input-box .mentions-autocomplete-list li > div.icon { width: 16px; height: 16px; float: left; margin-top: 5px; margin-right: 5px; -moz-background-origin: 3px; border-radius: 3px; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li em { font-weight: bold; font-style: none; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li:hover, .CommunityFeed .mentions-input-box .mentions-autocomplete-list li.active { background-color: #f2f2f2; }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list li b { background: #ffff99; font-weight: normal; }
+.CommunityFeed .mentions-input-box .mentions { display: none; }
+.CommunityFeed #palist a.curr i.expand-list { font-size: 1.5em; width: 32px; color: #72c02c; border: 1px solid #72c02c; }
+.CommunityFeed #palist a.curr:after { display: inline-block; content: attr(title); color: #72c02c; }
+.CommunityFeed #palist a.curr i { margin-right: 5px; }
+.CommunityFeed .share { background-image: url(/img/chatter/innershadow-normal.png); background-position: 0 0; background-repeat: repeat-x; }
+.CommunityFeed .sky-div-margin { margin: 0 30px; }
+.CommunityFeed .profile .sky-form.bordered { border: 1px solid #ddd; }
+.CommunityFeed .pollfieldset ul.pollchoices { list-style-type: none; }
+.CommunityFeed .pollfieldset .progress.progress-u.progress-sm { margin-bottom: 0px; }
+.CommunityFeed .pollfieldset li.pollchoice { height: 50px; }
+.CommunityFeed .pollvotecount { margin-top: 20px; display: inline-block; }
+.CommunityFeed .file-info { padding-left: 13px; }
+.CommunityFeed .file-title { margin-bottom: 2px; }
+.CommunityFeed .file-section { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.CommunityFeed :focus::-webkit-input-placeholder { color: transparent; }
+.CommunityFeed :focus::-moz-placeholder { color: transparent; }
+.CommunityFeed :focus:-moz-placeholder { color: transparent; }
+.CommunityFeed :focus:-ms-input-placeholder { color: transparent; }
+.CommunityFeed ::-webkit-input-placeholder { color: #b0b0b0; }
+.CommunityFeed ::-moz-placeholder { color: #b0b0b0; }
+.CommunityFeed :-moz-placeholder { color: #b0b0b0; }
+.CommunityFeed :-ms-input-placeholder { color: #b0b0b0; }
+.CommunityFeed h4.media-heading { display: inherit; }
+.CommunityFeed .btn-u:hover { transition: min-width 0s; }
+
+/* ------------------------
+	CommunityFeedNavigation
+------------------------ */
+.CommunityFeedNavigation .menu-item-link a:hover { color: #72c02c; text-decoration: underline; }
+.CommunityFeedNavigation ul li, .CommunityFeedNavigation ol li { margin-left: 0; }
+
+/* ---------------------------
+	CommunityHomeNotifications
+--------------------------- */
+.CommunityHomeNotifications div.overflow-h:hover { background-color: #f4f4f4; }
+.CommunityHomeNotifications a.notifyClass { text-decoration: none; }
+
+/* --------------
+	CommunityMenu
+-------------- */
+.CommunityMenu ul li, .CommunityMenu ol li { margin-left: 0; }
+.CommunityMenu .without-menu { height: 95px !important; }
+.CommunityMenu .logopos { position: absolute; bottom: 10px; }
+.CommunityMenu .list-inline.top-v1-data a { color: #555; }
+.CommunityMenu .list-inline.top-v1-data a:hover { color: #72c02c; }
+.CommunityMenu .navbar-default .navbar-nav > li > a:focus { color: #687074; }
+.CommunityMenu .navbar-default .navbar-nav > li > a:hover { color: #72c02c; }
+
+/* ------------------------
+	CommunityResourceDialog
+------------------------ */
+.CommunityResourceDialog .icon { font-size: 2.4em; border: 2px solid #777; width: 48px; height: 48px; padding-top: 6px; }
+.CommunityResourceDialog .icon:hover { color: #72c02c; border-color: #72c02c; }
+
+/* ------------------
+	CommunityShare
+------------------- */
+.CommunityShare .addGroups { text-decoration: none !important; color: #72c02c !important; }
+.CommunityShare .m-status { color: white; top: 40%; position: absolute; font-size: 6em; margin-top: -38px; left: 50%; margin-left: -38px; }
+.CommunityShare .div-like-input { cursor: text; padding: 5px 5px 5px; background-color: white; border: 1px solid #cccccc; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; box-sizing: border-box; color: rgba(0, 0, 0, 0.75); transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s; border-radius: 3px; margin-bottom: 5px; min-height: 39px; }
+.CommunityShare .groups-container .item { text-decoration: none; white-space: nowrap; border: 1px solid #d4dadc; padding: 2px 5px; -moz-border-radius: 4px; -webkit-border-radius: 4px; background: #eff7fa; color: #015ba7; margin-right: 3px; margin-bottom: 3px; float: left; line-height: normal; }
+.CommunityShare .groups-container { line-height: 22px; }
+.CommunityShare .div-like-input input.input-inviz { margin-bottom: 0px; display: block; width: 200px; padding: 2px 5px; font-size: 12px; height: 24px; border: none; box-shadow: none; }
+.CommunityShare .input-inviz:focus { background: inherit; }
+.CommunityShare .groups-container a.remove img { background: transparent url(/img/chatter/message_item_x.png) no-repeat scroll left top; width: 8px; height: 8px; margin-bottom: 4px; }
+.CommunityShare .groups-container a.remove:hover img { background-position: 0 50%; }
+.CommunityShare .tags-container a { margin-left: 5px; }
+.CommunityShare .div-like-input input.input-inviz { float: left; display: inline-block; }
+.CommunityShare .panel-group.acc-v1 { padding: 0 30px 5px; }
+.CommunityShare .panel-collapse.collapse { height: 0; }
+
+/* ---------------------
+	CommunityTagSelector
+--------------------- */
+.CommunityTagSelector .typeahead { border-radius: 4px; margin-top: 2px; }
+.CommunityTagSelector .dropdown-menu { background-clip: padding-box; background-color: #ffffff; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); display: none; float: left; left: 0; list-style: outside none none; margin: 2px 0 0; min-width: 160px; padding: 5px 0; position: absolute; top: 100%; z-index: 1000; }
+.CommunityTagSelector .dropdown-menu a { clear: both; color: #333333; display: block; font-weight: normal; line-height: 20px; padding: 3px 20px; white-space: nowrap; }
+.CommunityTagSelector .dropdown-menu li > a:hover, .CommunityTagSelector .dropdown-menu li > a:focus, .CommunityTagSelector .dropdown-submenu:hover > a { background-color: #0081c2; background-image: linear-gradient(to bottom, #0088cc, #0077b3); background-repeat: repeat-x; color: #ffffff; text-decoration: none; }
+.CommunityTagSelector .dropdown-menu .active > a, .CommunityTagSelector .dropdown-menu .active > a:hover { background-color: #0081c2; background-image: -moz-linear-gradient(center top, #0088cc, #0077b3); background-repeat: repeat-x; color: #ffffff; outline: 0 none; text-decoration: none; }
+.CommunityTagSelector .dropdown-menu .disabled > a, .CommunityTagSelector .dropdown-menu .disabled > a:hover { color: #999999; }
+.CommunityTagSelector .dropdown-menu .disabled > a:hover { background-color: transparent; cursor: default; text-decoration: none; }
+.CommunityTagSelector .div-like-input { cursor: text; padding: 5px 5px 5px; background-color: white; border: 1px solid #cccccc; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; box-sizing: border-box; color: rgba(0, 0, 0, 0.75); transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s; border-radius: 3px; margin-bottom: 5px; min-height: 39px; }
+.CommunityTagSelector .tags-container .item { text-decoration: none; white-space: nowrap; border: 1px solid #d4dadc; padding: 2px 5px; -moz-border-radius: 4px; -webkit-border-radius: 4px; background: #eff7fa; color: #015ba7; margin-right: 3px; margin-bottom: 3px; float: left; line-height: normal; }
+.CommunityTagSelector .tags-container { line-height: 22px; }
+.CommunityTagSelector .div-like-input input.input-inviz { margin-bottom: 0px; display: block; width: 200px; padding: 2px 5px; font-size: 12px; height: 24px; border: none; box-shadow: none; }
+.CommunityTagSelector .input-inviz:focus { background: inherit; }
+.CommunityTagSelector .tags-container a.remove img { background: transparent url(/img/chatter/message_item_x.png) no-repeat scroll left top; width: 8px; height: 8px; margin-bottom: 4px; }
+.CommunityTagSelector .tags-container a.remove:hover img { background-position: 0 50%; }
+.CommunityTagSelector .tags-container a { margin-left: 5px; }
+.CommunityTagSelector .panel-success .panel-heading:hover a { text-decoration: none; color: black; background-color: #f8f8f8; }
+.CommunityTagSelector .panel-heading .fa { width: 10px; }
+.CommunityTagSelector .div-like-input input.input-inviz { float: left; display: inline-block; }
+.CommunityTagSelector .panel-heading span { cursor: pointer; }
+.CommunityTagSelector .panel-link .panel-heading { color: #72c02c; padding: 0 15px; }
+.CommunityTagSelector .panel-link .panel-heading span:hover { text-decoration: underline; }
+
+/* -----------------------
+	CommunityUserPhoto
+----------------------- */
+.CommunityUserPhoto .user-photo { position: relative; overflow: hidden; }
+.CommunityUserPhoto .user-photo:hover .user-photo-link { bottom: 1px; }
+.CommunityUserPhoto .user-photo .user-photo-link { cursor: pointer; text-decoration: none; position: absolute; bottom: -100%; left: 0; z-index: 9999; width: 100%; height: 30px; background: #5fb611; color: #fff; overflow: hidden; font-size: 14px; transition: all .3s ease-in-out; }
+.CommunityUserPhoto .user-photo .user-photo-link .user-photo-inner { padding: 5px; text-align: center; }
+.CommunityUserPhoto .m-status { color: white; top: 30%; position: absolute; font-size: 6em; margin-top: -38px; left: 50%; margin-left: -38px; }
+
+/* ------
+Pages
+------ */
+/* -------------
+	Community404
+------------- */
+.container.content.Community404 { text-align: center; font-size: 3em; margin: 30px 0 250px; }
+.container.content.Community404 .fa.fa-smile-o { font-size: 2em; }
+
+/* ------------------
+	CommunityDiscover
+------------------ */
+.CommunityDiscover .tooltip-inner { max-width: 500px; text-align: left; }
+.CommunityDiscover .tooltip-inner li { color: white; }
+.CommunityDiscover .tooltips.s-tip { background-color: #72c02c; color: white; padding: 5px 10px; text-decoration: none; }
+
+/* ---------------------
+	CommunityEventDetail
+--------------------- */
+.CommunityEventDetail #eventData { text-align: left; padding-left: 35px; }
+.CommunityEventDetail #eventData h3 { margin-bottom: 0px; }
+.CommunityEventDetail #eventData #startEndDate { font-style: italic; }
+.CommunityEventDetail .sky-form a { color: #72c02c; }
+.CommunityEventDetail .sky-form hr { margin: 6px 0; }
+.CommunityEventDetail .sky-form .dl-horizontal #gCalendar { padding: 0 20px; }
+.CommunityEventDetail .sky-form .dl-horizontal #gCalendar .gCalendar__label { float: left; font-weight: bold; margin-right: 10px; }
+.CommunityEventDetail .sky-form .dl-horizontal #groupsSection { padding: 0 20px; }
+.CommunityEventDetail .sky-form .dl-horizontal #tagsSection { padding: 0 20px; }
+
+/* ----------------------
+	CommunityEventEdit
+---------------------- */
+.CommunityEventEdit { /* Error Message Salesforce */ }
+.CommunityEventEdit .sky-form .message { display: block; width: 95.2%; margin: 0 auto; margin-top: 30px; }
+.CommunityEventEdit .sky-form .message .messageTable { width: 100%; }
+.CommunityEventEdit .sky-form .message .messageTable .messageText { padding: 15px 30px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.CommunityEventEdit .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
+.CommunityEventEdit .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
+.CommunityEventEdit .sky-form .message ul li { margin-top: 10px; padding: 15px 30px; padding-top: 15px !important; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; display: block; }
+
+/* -------------------------
+	CommunityFeed_MyMessages
+------------------------- */
+.CommunityFeed_MyMessages.profile .panel-heading { background-color: #f7f7f7; }
+.CommunityFeed_MyMessages .media.conversation:hover { background: #e5f6d5; }
+.CommunityFeed_MyMessages .media.media-v2.conversation .pull-left { position: relative; }
+.CommunityFeed_MyMessages.profile .panel-heading { background-color: #f7f7f7; }
+.CommunityFeed_MyMessages .typeahead-choices { position: relative; margin: 0; padding: 0; width: 100%; height: auto !important; height: 1%; border: 1px solid #aaa; background-color: #fff; background-image: linear-gradient(#eeeeee 1%, #ffffff 15%); cursor: text; }
+.CommunityFeed_MyMessages .typeahead-choices li.search-choice { position: relative; margin: 4px 2px 3px; padding: 2px 3px; border: 1px solid #aaa; max-width: 100%; border-radius: 3px; background-color: #eeeeee; background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%); background-size: 100% 19px; background-repeat: repeat-x; background-clip: padding-box; box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05); color: #333; cursor: default; float: left; }
+.CommunityFeed_MyMessages .typeahead-choices li.search-field { float: left; }
+.CommunityFeed_MyMessages .typeahead-choices li { list-style: none; }
+.CommunityFeed_MyMessages .typeahead-choices .notification:hover { background: #eee; cursor: pointer; }
+.CommunityFeed_MyMessages .tt-dropdown-menu { width: 410px; left: 69px; top: 43px; z-index: 200; height: auto; }
+.CommunityFeed_MyMessages .tt-dataset-suggestedRecipients { padding: 0 0; display: block; position: absolute; border: 1px solid #7d7d84; background: #fff; width: 27em; z-index: 90; }
+.CommunityFeed_MyMessages .tt-input { border: none; }
+.CommunityFeed_MyMessages .conversation { cursor: pointer; }
+.CommunityFeed_MyMessages .conversation.unread .indicator { position: absolute; right: 0; top: 0; }
+.CommunityFeed_MyMessages .conversation.unread p { font-weight: bold; }
+
+/* ---------------------
+	CommunityFeed_People
+--------------------- */
+.CommunityFeed_People ul.pager { margin-left: 15px; margin-right: 15px; }
+
+/*----------------------
+	CommunityGroupCreate
+--------------------- */
+.CommunityGroupCreate .row .bPageBlock { border-top: 3px solid #72c02c; margin-bottom: 0; }
+.CommunityGroupCreate .row.u-page-block { background: #f8f8f8; padding: 15px; margin: 0; border-top: 3px solid #72c02c; }
+.CommunityGroupCreate .create-group .title__container { padding-left: 35px; }
+.CommunityGroupCreate .create-group .buttons__container { padding-right: 25px; }
+.CommunityGroupCreate input[id*="namefield"] { height: 26px; }
+.CommunityGroupCreate .calert h4 { font-size: 1.25em; margin-top: 0; color: inherit; }
+.CommunityGroupCreate #nabtn { margin-left: 5px; }
+.CommunityGroupCreate span.nameok, .CommunityGroupCreate span.nameerr { margin-left: 5px; }
+.CommunityGroupCreate .nameok i, .CommunityGroupCreate .nameerr i { font-size: 1.5em; margin-right: 5px; vertical-align: middle; }
+.CommunityGroupCreate .nameok { color: #72c02c; }
+.CommunityGroupCreate .nameerr { color: #c00; }
+.CommunityGroupCreate .requiredInput textarea { vertical-align: middle; }
+.CommunityGroupCreate .sky-form { padding-top: 15px; }
+.CommunityGroupCreate .u-page-block input { vertical-align: top; }
+
+/* -------------------------
+	CommunityGroupDetailPage
+------------------------- */
+.CommunityGroupDetailPage .profile-edit .headline { margin-bottom: 15px; }
+.CommunityGroupDetailPage .profile-edit .blog-photos li img { width: 36px; height: 36px; }
+.CommunityGroupDetailPage .modal__pending__link { color: #e9b605; }
+
+/* ----------------------
+	Community Group Files
+---------------------- */
+#CommunityGroupFiles #nvsbtn { opacity: 0.65; }
+#CommunityGroupFiles #sbtnshfg { opacity: 0.65; }
+#CommunityGroupFiles .img-responsive { margin-left: auto; margin-right: auto; }
+
+/* ----------------------
+	CommunityGroupManager
+---------------------- */
+.CommunityGroupManager { /* Error Message Salesforce */ }
+.CommunityGroupManager.profile .profile-edit hr { margin: 10px 0 15px; }
+.CommunityGroupManager .sky-form .message { display: block; width: 95.2%; margin: 0 auto; margin-top: 30px; }
+.CommunityGroupManager .sky-form .message .messageTable { width: 100%; }
+.CommunityGroupManager .sky-form .message .messageTable .messageText { padding: 15px 30px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.CommunityGroupManager .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
+.CommunityGroupManager .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
+.CommunityGroupManager .sky-form .message ul li { margin-top: 10px; padding: 15px 30px; padding-top: 15px !important; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; display: block; }
+.CommunityGroupManager .pending-link { color: #e9b605; font-weight: bold; }
+.CommunityGroupManager .fa.fa-map-marker { color: #72c02c; }
+
+/* ----------------
+	CommunityGroups 
+---------------- */
+.CommunityGroups #quickSearchButton { min-width: 40px; }
+
+/* ------------------
+	CommunityHome
+------------------ */
+.CommunityHome .text-on-img { display: inline-block; position: relative; }
+.CommunityHome .text-on-img h1 { display: inline-block; position: absolute; top: 10%; left: 10%; color: #fff; }
+
+/*---------------
+	CommunityNews
+-------------- */
+.CommunityNews .thumbnail-style a.btn-more.sticky { background-color: #e74c3c; }
+.CommunityNews .thumbnail-style a.btn-more.sticky:hover { text-decoration: none; box-shadow: 0 0 0 2px #d04436; }
+
+/* --------------------
+	CommunityNewsDetail
+-------------------- */
+.CommunityNewsDetail .row.u-page-block { background: #f8f8f8; border-top: 3px solid #72c02c; }
+.CommunityNewsDetail .image-container { max-height: 300px; overflow: hidden; }
+
+/* ------------------
+	CommunityNewsEdit
+------------------ */
+.CommunityNewsEdit .row .bPageBlock { border-top: 3px solid #72c02c; }
+.CommunityNewsEdit .title-container { padding-left: 35px; }
+.CommunityNewsEdit .buttons-container { padding-right: 25px; }
+.CommunityNewsEdit input[type="file"] { margin-top: 5px; }
+
+/* ---------------------
+	CommunityProfilePage
+--------------------- */
+.CommunityProfilePage .p-st-blk { display: inline-block; width: 40px; text-align: right; vertical-align: middle; height: 24px; margin-top: -12px; }
+.CommunityProfilePage .p-chb { font-size: 1.3em; color: #FF7F50; font-weight: bold; vertical-align: middle; }
+.CommunityProfilePage .fa.fa-spinner.fa-pulse { font-size: 2.5em; }
+.CommunityProfilePage .sky-form header { padding: 10px 0 15px 0; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn { border-color: #ff0024 !important; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn:before { background-color: #ff0024; }
+.CommunityProfilePage #settings .sky-form .toggle i.red-btn:after { color: #ff0024; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn { border-color: #72c02c !important; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn:before { background-color: #72c02c; }
+.CommunityProfilePage #settings .sky-form .toggle i.green-btn:after { color: #72c02c; }
+.CommunityProfilePage #digest .table thead { background: #f7f7f7; }
+.CommunityProfilePage #digest i.rounded-x { width: 24px; height: 24px; }
+.CommunityProfilePage #digest i.rounded-x.fa { background: #72c02c; color: white; border-color: #72c02c; }
+
+/* ------------------
+	CommunityRegTerms
+------------------ */
+.CommunityRegTerms .row .bPageBlock { border-top: 3px solid #72c02c; }
+.CommunityRegTerms .row.u-page-block { background: #f8f8f8; padding: 15px; margin: 0 0 20px 0; border-top: 3px solid #72c02c; }
+.CommunityRegTerms .row .pbSubheader { background-color: inherit; font-size: 1.3em; margin-left: 20px; }
+.CommunityRegTerms .menu-item-link a:hover { color: #72c02c; text-decoration: underline; }
+.CommunityRegTerms .list-group-item .plus { color: #72c02c; }
+.CommunityRegTerms .sidebar-icon-container { width: 15px; display: inline-block; }
+.CommunityRegTerms li.list-group-item.active i.fa.fa-check-circle-o.plus { color: #fff; }
+.CommunityRegTerms .list-group.sidebar-nav-v1 { margin-top: 46px; }
+.CommunityRegTerms .sky-form input[type="checkbox"] { vertical-align: top; }
+
+/* ------------------------
+	CommunityResourceDetail
+------------------------ */
+.CommunityResourceDetail .sky-form .dl-horizontal hr { margin: 6px 0; }
+.CommunityResourceDetail .sky-form a { color: #72c02c; }
+
+/* ----------------------
+	CommunityResourceEdit
+---------------------- */
+.CommunityResourceEdit { /* Error Message Salesforce */ }
+.CommunityResourceEdit .sky-form .message { display: block; width: 95.2%; margin: 0 auto; margin-top: 30px; }
+.CommunityResourceEdit .sky-form .message .messageTable { width: 100%; }
+.CommunityResourceEdit .sky-form .message .messageTable .messageText { padding: 15px 30px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.CommunityResourceEdit .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
+.CommunityResourceEdit .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
+.CommunityResourceEdit .sky-form .message ul li { margin-top: 10px; padding: 15px 30px; padding-top: 15px !important; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; display: block; }
+.CommunityResourceEdit .calert h4 { font-size: 1.25em; margin-top: -5px; color: inherit; }
+.CommunityResourceEdit .calert .messageText { height: 20px; color: inherit; }
+
+/* ----------------
+	CommunitySearch
+---------------- */
+.CommunitySearch .results { text-align: center; font-size: 13px; }
+.CommunitySearch .headline i { border: #fff; }
+
+/* ------------------------
+	CommunityShowEditObject
+------------------------ */
+.CommunityShowEditObject .messageText { padding: 15px 30px; margin-bottom: 20px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.CommunityShowEditObject .messageText span { display: none; }
+.CommunityShowEditObject table.messageTable { width: 100%; }
+.CommunityShowEditObject .sky-form .message { display: block; }

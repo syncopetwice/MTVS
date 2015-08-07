@@ -13,9 +13,6 @@ var
 
 	var staticResources = [
 		'assets/**/*',
-		'scss/**/*',
-		'gulpfile.js',
-		'package.json'
 	];
 
 	gulp.task('connect', function() {
@@ -26,7 +23,7 @@ var
 	});
 
 	gulp.task('clean', function() {
-		return gulp.src('assets/css/**/*', { read: true })
+		return gulp.src('assets/css/app/**/*', { read: true })
 			.pipe(rimraf());
 	});
 	gulp.task('scss', function () {
@@ -39,7 +36,7 @@ var
 				cascade: false
 			}))
 			.pipe(connect.reload())
-			.pipe(gulp.dest('assets/css/'));
+			.pipe(gulp.dest('assets/css/app/'));
 	});
 	// Themes
 	gulp.task('themes', function () {
@@ -52,19 +49,19 @@ var
 				cascade: false
 			}))
 			.pipe(connect.reload())
-			.pipe(gulp.dest('assets/css/'));
+			.pipe(gulp.dest('assets/css/app/'));
 	});
 	gulp.task('archive', function () {
 		return gulp.src(
 			staticResources,
-			{ base:'.'})
+			{ base:'assets/'})
 			.pipe(zip('MotivisStaticResources.zip', {compress: true}))
 			.pipe(gulp.dest('./'));
 	});
 
 	gulp.task('copy', function(){
-		return gulp.src(staticResources, { base:'.'})
-			.pipe(gulp.dest('C:\\Maven\\Motivis Core\\resource-bundles\\UITEST.resource\\'));
+		return gulp.src(staticResources, { base:'assets/'})
+			.pipe(gulp.dest('C:\\Maven\\Motivis Core\\resource-bundles\\assets.resource\\'));
 	});
 
 	gulp.task('watch', function() {

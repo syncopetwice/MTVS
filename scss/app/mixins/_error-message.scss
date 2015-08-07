@@ -1,0 +1,36 @@
+/* Error Message Salesforce */
+.sky-form .message {
+	display: block;
+	width: 95.2%;
+	margin: 0 auto;
+	margin-top: 30px;
+	.messageTable {
+		width: 100%;
+		.messageText {
+			padding: 15px 30px;
+			border: 1px solid #ebccd1;
+			background-color: #f2dede;
+			color: #a94442;
+			span {
+				h4 {
+					font-size: 13px;
+					margin: 0;
+				}
+			}
+		}
+	}
+	ul {
+		width: 100%;
+		padding: 0 !important;
+		list-style-type: none;
+		li {
+			margin-top: 10px;
+			padding: 15px 30px;
+			padding-top: 15px !important;
+			border: 1px solid #ebccd1;
+			background-color: #f2dede;
+			color: #a94442;
+			display: block;
+		}
+	}
+}

@@ -9,21 +9,22 @@
 			}
 		}
 	}
-	.messageText {
-		padding:15px 30px;
-		margin-bottom:20px;
-		border:1px solid #ebccd1;
-		background-color:#f2dede;
-		color:#a94442;
-	}
-	.messageText {
-		span {
-				display:none;
-		}
-	}
-	table.messageTable {
-		width:100%;
-	}
+	// .messageText {
+	// 	padding:15px 30px;
+	// 	margin-bottom:20px;
+	// 	border:1px solid #ebccd1;
+	// 	background-color:#f2dede;
+	// 	color:#a94442;
+	// }
+	// .messageText {
+	// 	span {
+	// 		display:none;
+	// 	}
+	// }
+	// table.messageTable {
+	// 	width:100%;
+	// }
+	@import '../mixins/error-message';
 	.pending-link {
 		color:#e9b605;
 		font-weight:bold;

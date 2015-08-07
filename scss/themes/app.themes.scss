@@ -499,7 +499,7 @@ $themes:
 				}
 			}
 
-		//CommunityFeedNavigation
+		// CommunityFeedNavigation
 			.CommunityFeedNavigation {
 				.menu-item-link {
 					a {
@@ -516,6 +516,27 @@ $themes:
 					}
 				}
 			}
+		
+		// CommunityMenu
+		.CommunityMenu {
+			.list-inline.top-v1-data {
+				a {
+					&:hover {
+						color: $color;
+					}
+				}
+			}
+			.navbar-default .navbar-nav > li {
+				> a {
+					&:focus {
+						color: #687074;
+					}
+					&:hover {
+						color: $color;
+					}
+				}
+			}
+		}
 
 		// CommunityResourceDialog
 			.CommunityResourceDialog {
@@ -538,6 +559,20 @@ $themes:
 			.CommunityTagSelector {
 				.panel-link .panel-heading {
 					color: $color;
+				}
+				.panel-success {
+					border-color: $color;
+					> .panel-heading {
+						color: $color;
+						border-color: $color;
+						background: lighten($color, 30%);
+					}
+				}
+				.tags-container {
+					.item {
+						background: #f7f7f7;
+						color: $color;
+					}
 				}
 			}
 
@@ -627,17 +662,17 @@ $themes:
 			}
 		// CommunityProfilePage
 			.CommunityProfilePage {
-				#settings {
-					.sky-form {
-						.toggle {
-							i {
-								&.green-btn { border-color: $color !important;}
-								&.green-btn:before { background-color: $color; }
-								&.green-btn:after { color: $color; }
-							}
-						}
-					}
-				}
+				// #settings {
+				// 	.sky-form {
+				// 		.toggle {
+				// 			i {
+				// 				&.green-btn { border-color: $color !important;}
+				// 				&.green-btn:before { background-color: $color; }
+				// 				&.green-btn:after { color: $color; }
+				// 			}
+				// 		}
+				// 	}
+				// }
 				#digest {
 					i.rounded-x.fa { background: $color; border-color: $color; }
 				}

@@ -12,4 +12,22 @@
 		position: absolute;
 		bottom: 10px;
 	}
+	.list-inline.top-v1-data {
+		a {
+			color: #555;
+			&:hover {
+				color: #72c02c;
+			}
+		}
+	}
+	.navbar-default .navbar-nav > li {
+		> a {
+			&:focus {
+				color: #687074;
+			}
+			&:hover {
+				color: #72c02c;
+			}
+		}
+	}
 }

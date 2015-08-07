@@ -2,11 +2,12 @@
 	CommunityFeed
 -------------- */
 .CommunityFeed {
-	.profile i.expand-list.active {
+	@include error-message;
+	i.expand-list.active {
 		color:#72c02c;
 		border: 1px solid #72c02c;
 	}
-	.profile i.expand-list.active:hover {
+	i.expand-list.active:hover {
 		color: #999;
 		border-color: #999;
 	}
@@ -14,19 +15,19 @@
 		height: 2px;
 		border-bottom: 1px solid #ccc;
 	}
-	.profile i.expand-list {
+	i.expand-list {
 		min-width: 24px;
 	}
-	.profile .media.media-v2 .media.media-v2 {
+	.media.media-v2 .media.media-v2 {
 		margin-top: 20px;
 		background-color: #eee;
 		padding: 5px 15px;
 	}
-	.profile .media-body .d-link {
+	.media-body .d-link {
 		border: 1px solid #ddd;
 		padding: 5px 12px;
 	}
-	.profile .media-body .d-link:hover {
+	.media-body .d-link:hover {
 		background-color: #eee;
 		color: #555;
 		text-decoration: none;
@@ -116,7 +117,7 @@
 	.sky-div-margin {
 		margin: 0 30px;
 	}
-	.profile .sky-form.bordered {
+	.sky-form.bordered {
 		border: 1px solid #ddd;
 	}
 	.pollfieldset ul.pollchoices {

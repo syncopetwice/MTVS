@@ -2,6 +2,7 @@
 	CommunityNewsEdit
 ------------------ */
 .CommunityNewsEdit {
+	@include error-message(0,0);
 	.row {
 		.bPageBlock {
 			border-top:3px solid #72c02c;

@@ -2,6 +2,7 @@
 	CommunityGroupCreate
 --------------------- */
 .CommunityGroupCreate {
+	@include error-message;
 	.row .bPageBlock {
 		border-top: 3px solid #72c02c;
 		margin-bottom:0;
@@ -30,9 +31,9 @@
 		margin-top:0;
 		color:inherit;
 	}
-	#nabtn {
-		margin-left:5px;
-	}
+	// #nabtn {
+	// 	margin-left:5px;
+	// }
 	span.nameok,
 	span.nameerr {
 		margin-left:5px;
@@ -59,5 +60,17 @@
 		input {
 			vertical-align:top;
 		}
+	}
+	.jcrop-keymgr {
+		opacity: 0;
+	}
+	.imgsizeStyle {
+		max-height: 350px;
+	}
+	.preview-img__container {
+		width:100px;
+		height:100px;
+		overflow:hidden;
+		float:left;
 	}
 }

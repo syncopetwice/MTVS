@@ -3,5 +3,5 @@
 ---------------------- */
 
 .CommunityEventEdit {
-	@import '../mixins/error-message';
+	@include error-message;
 }

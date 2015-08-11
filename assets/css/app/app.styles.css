@@ -37,6 +37,8 @@ Base components
 
 .text-align-right { text-align: right; }
 
+.width-15 { width: 15px; }
+
 .width-20 { width: 20px; }
 
 .width-50 { width: 50px; }
@@ -65,6 +67,21 @@ Base components
 
 .vertical-align-top { vertical-align: top; }
 
+.display-inline-block { display: inline-block; }
+
+/* Apex Form Validation */
+.calert { display: none; }
+.calert .message { display: block; margin-top: 0px; margin-bottom: 10px; }
+.calert .message .messageTable { width: 100%; }
+.calert .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.calert .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
+.calert .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
+.calert .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
+.calert .message ul li:first-child { border-top: 1px solid #ebccd1; }
+.calert .message ul li:last-child { border-bottom: 1px solid #ebccd1; }
+
+.apexp .pbBody .errorMsg { color: #b61332; }
+
 /* -----------
 Components
 ------------*/
@@ -76,14 +93,6 @@ Components
 /* --------------
 	CommunityFeed
 -------------- */
-.CommunityFeed .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityFeed .sky-form .message .messageTable { width: 100%; }
-.CommunityFeed .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityFeed .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityFeed .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityFeed .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityFeed .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityFeed .sky-form .message ul li:last-child { border-top: none; }
 .CommunityFeed i.expand-list.active { color: #72c02c; border: 1px solid #72c02c; }
 .CommunityFeed i.expand-list.active:hover { color: #999; border-color: #999; }
 .CommunityFeed .d-comment { height: 2px; border-bottom: 1px solid #ccc; }
@@ -204,6 +213,9 @@ Components
 .CommunityUserPhoto .user-photo .user-photo-link { cursor: pointer; text-decoration: none; position: absolute; bottom: -100%; left: 0; z-index: 9999; width: 100%; height: 30px; background: #5fb611; color: #fff; overflow: hidden; font-size: 14px; transition: all .3s ease-in-out; }
 .CommunityUserPhoto .user-photo .user-photo-link .user-photo-inner { padding: 5px; text-align: center; }
 .CommunityUserPhoto .m-status { color: white; top: 30%; position: absolute; font-size: 6em; margin-top: -38px; left: 50%; margin-left: -38px; }
+.CommunityUserPhoto .jcrop-keymgr { opacity: 0; }
+.CommunityUserPhoto .imgsizeStyle { max-height: 350px; }
+.CommunityUserPhoto .preview-img__container { width: 100px; height: 100px; overflow: hidden; float: left; margin-right: 15px; }
 
 /* ------
 Pages
@@ -237,15 +249,6 @@ Pages
 /* ----------------------
 	CommunityEventEdit
 ---------------------- */
-.CommunityEventEdit .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityEventEdit .sky-form .message .messageTable { width: 100%; }
-.CommunityEventEdit .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityEventEdit .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityEventEdit .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityEventEdit .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityEventEdit .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityEventEdit .sky-form .message ul li:last-child { border-top: none; }
-
 /* -------------------------
 	CommunityFeed_MyMessages
 ------------------------- */
@@ -273,19 +276,10 @@ Pages
 /*----------------------
 	CommunityGroupCreate
 --------------------- */
-.CommunityGroupCreate .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityGroupCreate .sky-form .message .messageTable { width: 100%; }
-.CommunityGroupCreate .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityGroupCreate .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityGroupCreate .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityGroupCreate .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityGroupCreate .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityGroupCreate .sky-form .message ul li:last-child { border-top: none; }
 .CommunityGroupCreate .row .bPageBlock { border-top: 3px solid #72c02c; margin-bottom: 0; }
 .CommunityGroupCreate .row.u-page-block { background: #f8f8f8; padding: 15px; margin: 0; border-top: 3px solid #72c02c; }
 .CommunityGroupCreate .create-group .title__container { padding-left: 35px; }
 .CommunityGroupCreate .create-group .buttons__container { padding-right: 25px; }
-.CommunityGroupCreate input[id*="namefield"] { height: 26px; }
 .CommunityGroupCreate .calert h4 { font-size: 1.25em; margin-top: 0; color: inherit; }
 .CommunityGroupCreate span.nameok, .CommunityGroupCreate span.nameerr { margin-left: 5px; }
 .CommunityGroupCreate .nameok i, .CommunityGroupCreate .nameerr i { font-size: 1.5em; margin-right: 5px; vertical-align: middle; }
@@ -315,14 +309,6 @@ Pages
 /* ----------------------
 	CommunityGroupManager
 ---------------------- */
-.CommunityGroupManager .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityGroupManager .sky-form .message .messageTable { width: 100%; }
-.CommunityGroupManager .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityGroupManager .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityGroupManager .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityGroupManager .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityGroupManager .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityGroupManager .sky-form .message ul li:last-child { border-top: none; }
 .CommunityGroupManager.profile .profile-edit hr { margin: 10px 0 15px; }
 .CommunityGroupManager .pending-link { color: #e9b605; font-weight: bold; }
 .CommunityGroupManager .fa.fa-map-marker { color: #72c02c; }
@@ -353,14 +339,6 @@ Pages
 /* ------------------
 	CommunityNewsEdit
 ------------------ */
-.CommunityNewsEdit .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; }
-.CommunityNewsEdit .sky-form .message .messageTable { width: 100%; }
-.CommunityNewsEdit .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityNewsEdit .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityNewsEdit .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityNewsEdit .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityNewsEdit .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityNewsEdit .sky-form .message ul li:last-child { border-top: none; }
 .CommunityNewsEdit .row .bPageBlock { border-top: 3px solid #72c02c; }
 .CommunityNewsEdit .title-container { padding-left: 35px; }
 .CommunityNewsEdit .buttons-container { padding-right: 25px; }
@@ -386,14 +364,6 @@ Pages
 /* ------------------
 	CommunityRegTerms
 ------------------ */
-.CommunityRegTerms .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityRegTerms .sky-form .message .messageTable { width: 100%; }
-.CommunityRegTerms .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityRegTerms .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityRegTerms .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityRegTerms .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityRegTerms .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityRegTerms .sky-form .message ul li:last-child { border-top: none; }
 .CommunityRegTerms .row .bPageBlock { border-top: 3px solid #72c02c; }
 .CommunityRegTerms .row.u-page-block { background: #f8f8f8; padding: 15px; margin: 0 0 20px 0; border-top: 3px solid #72c02c; }
 .CommunityRegTerms .row .pbSubheader { background-color: inherit; font-size: 1.3em; margin-left: 20px; }
@@ -413,14 +383,6 @@ Pages
 /* ----------------------
 	CommunityResourceEdit
 ---------------------- */
-.CommunityResourceEdit .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 0px; }
-.CommunityResourceEdit .sky-form .message .messageTable { width: 100%; }
-.CommunityResourceEdit .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityResourceEdit .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityResourceEdit .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityResourceEdit .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityResourceEdit .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityResourceEdit .sky-form .message ul li:last-child { border-top: none; }
 .CommunityResourceEdit .calert h4 { font-size: 1.25em; margin-top: -5px; color: inherit; }
 .CommunityResourceEdit .calert .messageText { height: 20px; color: inherit; }
 
@@ -429,15 +391,8 @@ Pages
 ---------------- */
 .CommunitySearch .results { text-align: center; font-size: 13px; }
 .CommunitySearch .headline i { border: #fff; }
+.CommunitySearch #resourceresults .table i.icon { font-size: 1.8em; border: 2px solid #777; width: 36px; }
 
 /* ------------------------
 	CommunityShowEditObject
 ------------------------ */
-.CommunityShowEditObject .sky-form .message { display: block; width: 95.2%; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 10px; }
-.CommunityShowEditObject .sky-form .message .messageTable { width: 100%; }
-.CommunityShowEditObject .sky-form .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; border-bottom: none; background-color: #f2dede; color: #a94442; }
-.CommunityShowEditObject .sky-form .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
-.CommunityShowEditObject .sky-form .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
-.CommunityShowEditObject .sky-form .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
-.CommunityShowEditObject .sky-form .message ul li:first-child { border: 1px solid #ebccd1; border-bottom: 0; }
-.CommunityShowEditObject .sky-form .message ul li:last-child { border-top: none; }

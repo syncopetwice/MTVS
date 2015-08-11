@@ -2,7 +2,7 @@
 	CommunityGroupCreate
 --------------------- */
 .CommunityGroupCreate {
-	@include error-message;
+	// @include error-message;
 	.row .bPageBlock {
 		border-top: 3px solid #72c02c;
 		margin-bottom:0;
@@ -22,9 +22,9 @@
 		}
 	}
 	// Input Field
-	input[id*="namefield"] {
-		height: 26px;
-	}
+	// input[id*="namefield"] {
+	// 	height: 26px;
+	// }
 
 	.calert h4 {
 		font-size:1.25em;

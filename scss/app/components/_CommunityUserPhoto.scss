@@ -34,7 +34,6 @@
 			}
 		}
 	}
-	
 	.m-status {
 		color: white;
 		top: 30%;
@@ -43,5 +42,19 @@
 		margin-top: -38px;
 		left: 50%;
 		margin-left: -38px;
+	}
+	// JCROP
+	.jcrop-keymgr {
+		opacity: 0;
+	}
+	.imgsizeStyle {
+		max-height: 350px;
+	}
+	.preview-img__container {
+		width:100px;
+		height:100px;
+		overflow:hidden;
+		float:left;
+		margin-right:15px;
 	}
 }

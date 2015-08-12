@@ -1,0 +1,53 @@
+/* ---------------------------------------------
+Motivis Styles
+Source: SCSS
+Appointment: inline styles from pages/components
+--------------------------------------------- */
+
+/* ------------
+Base components
+------------ */
+
+@import 'mixins/mixins';
+@import 'pages/base';
+@import 'components/Validation';
+
+/* -----------
+Components
+------------*/
+
+@import 'components/CommunityAboutGroup';
+@import 'components/CommunityFeed';
+@import 'components/CommunityFeedNavigation';
+@import 'components/CommunityHomeNotifications';
+@import 'components/CommunityMenu';
+@import 'components/CommunityResourceDialog';
+@import 'components/CommunityShare';
+@import 'components/CommunityTagSelector';
+@import 'components/CommunityUserPhoto';
+
+/* ------
+Pages
+------ */
+
+@import 'pages/Community404';
+@import 'pages/CommunityDiscover';
+@import 'pages/CommunityEventDetail';
+@import 'pages/CommunityEventEdit';
+@import 'pages/CommunityFeed_MyMessages';
+@import 'pages/CommunityFeed_People';
+@import 'pages/CommunityGroupCreate';
+@import 'pages/CommunityGroupDetailPage';
+@import 'pages/CommunityGroupFiles';
+@import 'pages/CommunityGroupManager';
+@import 'pages/CommunityGroups';
+@import 'pages/CommunityHome';
+@import 'pages/CommunityNews';
+@import 'pages/CommunityNewsDetail';
+@import 'pages/CommunityNewsEdit';
+@import 'pages/CommunityProfilePage';
+@import 'pages/CommunityRegTerms';
+@import 'pages/CommunityResourceDetail';
+@import 'pages/CommunityResourceEdit';
+@import 'pages/CommunitySearch';
+@import 'pages/CommunityShowEditObject';

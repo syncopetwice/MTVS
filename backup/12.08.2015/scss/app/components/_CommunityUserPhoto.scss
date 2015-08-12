@@ -1,0 +1,60 @@
+/* -----------------------
+	CommunityUserPhoto
+----------------------- */
+.CommunityUserPhoto {
+	// user-photo & user-photo link now exist in AddPhoto component
+	.user-photo {
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			.user-photo-link {
+				bottom: 1px;
+			}
+		}
+		.user-photo-link {
+			cursor: pointer;
+			text-decoration: none;
+			position: absolute;
+			bottom: -100%;
+			left: 0;
+			z-index: 9999;
+			width: 100%;
+			height: 30px;
+			background: #5fb611;
+			color: #fff;
+			overflow: hidden;
+			font-size: 14px;
+			-webkit-transition: all .3s ease-in-out;
+			   -moz-transition: all .3s ease-in-out;
+			     -o-transition: all .3s ease-in-out;
+			        transition: all .3s ease-in-out;
+			.user-photo-inner {
+				padding: 5px;
+				text-align: center;
+			}
+		}
+	}
+	.m-status {
+		color: white;
+		top: 30%;
+		position: absolute;
+		font-size: 6em;
+		margin-top: -38px;
+		left: 50%;
+		margin-left: -38px;
+	}
+	// JCROP
+	.jcrop-keymgr {
+		opacity: 0;
+	}
+	.imgsizeStyle {
+		max-height: 350px;
+	}
+	.preview-img__container {
+		width:100px;
+		height:100px;
+		overflow:hidden;
+		float:left;
+		margin-right:15px;
+	}
+}

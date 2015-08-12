@@ -1,0 +1,60 @@
+// Clearfix Hack
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Error Message Salesforce
+@mixin error-message($margin-top: 0px, $margin-bottom: 10px) {
+	.calert {
+		display: none;
+		.message {
+			display: block;
+			// width: 93%;
+			// margin-left: auto;
+			// margin-right: auto;
+			margin-top: $margin-top;
+			margin-bottom: $margin-bottom;
+			.messageTable {
+				width: 100%;
+				.messageText {
+					padding: 3px 10px;
+					border: 1px solid #ebccd1;
+					background-color: #f2dede;
+					color: #a94442;
+					span {
+						h4 {
+							font-size: 13px;
+							margin: 0;
+						}
+					}
+				}
+			}
+			ul {
+				width: 100%;
+				padding: 0 !important;
+				list-style-type: none;
+				li {
+					padding: 3px 10px !important;
+					background-color: #f2dede;
+					border-left: 1px solid #ebccd1;
+					border-right: 1px solid #ebccd1;
+					color: #a94442;
+					display: block;
+					&:first-child {
+						border-top: 1px solid #ebccd1;
+					}
+					&:last-child {
+						border-bottom: 1px solid #ebccd1;
+					}
+				}
+			}
+		}
+	}
+}

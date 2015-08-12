@@ -1,0 +1,9 @@
+/* Apex Form Validation */
+@include error-message;
+.apexp {
+	.pbBody {
+		.errorMsg {
+			color: #b61332;
+		}
+	}
+}

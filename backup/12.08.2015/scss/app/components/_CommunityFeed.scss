@@ -1,0 +1,159 @@
+/* --------------
+	CommunityFeed
+-------------- */
+.CommunityFeed {
+	// @include error-message;
+	i.expand-list.active {
+		color:#72c02c;
+		border: 1px solid #72c02c;
+	}
+	i.expand-list.active:hover {
+		color: #999;
+		border-color: #999;
+	}
+	.d-comment {
+		height: 2px;
+		border-bottom: 1px solid #ccc;
+	}
+	i.expand-list {
+		min-width: 24px;
+	}
+	.media.media-v2 .media.media-v2 {
+		margin-top: 20px;
+		background-color: #eee;
+		padding: 5px 15px;
+	}
+	.media-body .d-link {
+		border: 1px solid #ddd;
+		padding: 5px 12px;
+	}
+	.media-body .d-link:hover {
+		background-color: #eee;
+		color: #555;
+		text-decoration: none;
+	}
+	textarea.form-control {
+		resize: vertical;
+	}
+	.mentions-input-box .mentions-autocomplete-list {
+		display: none;
+		background: #fff;
+		border: 1px solid #b2b2b2;
+		position: absolute;
+		z-index: 10000;
+		margin-top: -2px;
+		border-radius:5px;
+		border-top-right-radius:0;
+		border-top-left-radius:0;
+		-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+		-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+	}
+	.mentions-input-box .mentions-autocomplete-list ul {
+		margin: 0;
+		padding: 0;
+	}
+	.mentions-input-box .mentions-autocomplete-list li {
+		background-color: #fff;
+		padding: 0 5px;
+		margin: 0;
+		width: auto;
+		border-bottom: 1px solid #eee;
+		height: 26px;
+		line-height: 26px;
+		overflow: hidden;
+		cursor: pointer;
+		list-style: none;
+		white-space: nowrap;
+	}
+	.mentions-input-box .mentions-autocomplete-list li:last-child {
+		border-radius:5px;
+	}
+	.mentions-input-box .mentions-autocomplete-list li > img,
+	.mentions-input-box .mentions-autocomplete-list li > div.icon {
+		width: 16px;
+		height: 16px;
+		float: left;
+		margin-top:5px;
+		margin-right: 5px;
+		-moz-background-origin:3px;
+		border-radius:3px;
+	}
+	.mentions-input-box .mentions-autocomplete-list li em {
+		font-weight: bold;
+		font-style: none;
+	}
+
+	.mentions-input-box .mentions-autocomplete-list li:hover,
+	.mentions-input-box .mentions-autocomplete-list li.active {
+		background-color: #f2f2f2;
+	}
+	.mentions-input-box .mentions-autocomplete-list li b {
+		background: #ffff99;
+		font-weight: normal;
+	}
+	.mentions-input-box .mentions {
+		display:none;
+	}
+	#palist a.curr i.expand-list {
+		font-size: 1.5em;
+		width: 32px;
+		color: #72c02c;
+		border: 1px solid #72c02c;
+	}
+	#palist a.curr:after {
+		display: inline-block;
+		content: attr(title);
+		color: #72c02c;
+	}
+	#palist a.curr i {
+		margin-right: 5px;
+	}
+	.share {
+		background-image: url(/img/chatter/innershadow-normal.png);
+		background-position: 0 0;
+		background-repeat: repeat-x;
+	}
+	.sky-div-margin {
+		margin: 0 30px;
+	}
+	.sky-form.bordered {
+		border: 1px solid #ddd;
+	}
+	.pollfieldset ul.pollchoices {
+		list-style-type: none;
+	}
+	.pollfieldset .progress.progress-u.progress-sm {
+		margin-bottom: 0px;
+	}
+	.pollfieldset li.pollchoice {
+		height: 50px;
+	}
+	.pollvotecount {
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.file-info {
+		padding-left: 13px;
+	}
+	.file-title {
+		margin-bottom: 2px;
+	}
+	.file-section {
+		display: flex;
+	}
+	:focus::-webkit-input-placeholder {color: transparent}
+	:focus::-moz-placeholder          {color: transparent}
+	:focus:-moz-placeholder           {color: transparent}
+	:focus:-ms-input-placeholder      {color: transparent}
+	::-webkit-input-placeholder {color:#b0b0b0;}
+	::-moz-placeholder          {color:#b0b0b0;}
+	:-moz-placeholder           {color:#b0b0b0;}
+	:-ms-input-placeholder      {color:#b0b0b0;}
+	h4.media-heading {
+		display: inherit;
+	}
+	.btn-u:hover {
+		transition: min-width 0s;
+	}
+}

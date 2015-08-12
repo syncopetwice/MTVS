@@ -1,0 +1,42 @@
+/* ------------------
+	CommunityRegTerms
+------------------ */
+.CommunityRegTerms {
+	// @include error-message;
+	.row .bPageBlock {
+		border-top: 3px solid #72c02c;
+	}
+	.row.u-page-block {
+		background:#f8f8f8;
+		padding:15px;
+		margin:0 0 20px 0;
+		border-top:3px solid #72c02c;
+	}
+	.row .pbSubheader {
+		background-color: inherit;
+		font-size: 1.3em;
+		margin-left: 20px;
+	}
+	.menu-item-link a:hover {
+		color: #72c02c;
+		text-decoration: underline;
+	}
+	.list-group-item .plus {
+		color: #72c02c;
+	}
+	.sidebar-icon-container {
+		width:15px;
+		display:inline-block;
+	}
+	li.list-group-item.active i.fa.fa-check-circle-o.plus {
+		color: #fff;
+	}
+	.list-group.sidebar-nav-v1 {
+		margin-top:46px;
+	}
+	.sky-form {
+		input[type="checkbox"] {
+			vertical-align: top;
+		}
+	}
+}

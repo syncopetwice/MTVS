@@ -1,0 +1,44 @@
+/* ---------------------
+	CommunityProfilePage
+--------------------- */
+.CommunityProfilePage {
+	.p-st-blk {
+		display: inline-block;
+		width: 40px;
+		text-align: right;
+		vertical-align: middle;
+		height: 24px;
+		margin-top: -12px;
+	}
+	.p-chb {
+		font-size:1.3em;
+		color: #FF7F50;
+		font-weight:bold;
+		vertical-align: middle;
+	}
+	.fa.fa-spinner.fa-pulse {
+		font-size: 14px;
+	}
+	.sky-form header {
+		padding: 10px 0 15px 0;
+	}
+	#settings {
+		.sky-form {
+			.toggle {
+				i {
+					&.red-btn { border-color:#ff0024 !important; }
+					&.red-btn:before { background-color:#ff0024; }
+					&.red-btn:after { color:#ff0024; }
+					&.green-btn { border-color:#72c02c !important;}
+					&.green-btn:before { background-color:#72c02c; }
+					&.green-btn:after { color:#72c02c; }
+				}
+			}
+		}
+	}
+	#digest {
+		.table thead { background:#f7f7f7; }
+		i.rounded-x { width:24px; height:24px; }
+		i.rounded-x.fa { background:#72c02c; color:white; border-color:#72c02c; }
+	}
+}

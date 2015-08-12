@@ -1,0 +1,18 @@
+/* ----------------------
+	CommunityResourceEdit
+---------------------- */
+.CommunityResourceEdit {
+	// @include error-message;
+	.calert h4 {
+		font-size: 1.25em;
+		margin-top:-5px;
+		color:inherit;
+	}
+	.calert .messageText {
+		height:20px;
+		color:inherit;
+	}
+	// .panel-collapse.collapse {
+	// 	height: 0;
+	// }
+}

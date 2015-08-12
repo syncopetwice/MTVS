@@ -35,7 +35,7 @@ var
 				browsers: ['last 2 versions', 'ie >= 8'],
 				cascade: false
 			}))
-			// .pipe(connect.reload())
+			.pipe(connect.reload())
 			.pipe(gulp.dest('assets/css/app/'));
 	});
 	// Themes
@@ -48,7 +48,7 @@ var
 				browsers: ['last 2 versions', 'ie >= 8'],
 				cascade: false
 			}))
-			// .pipe(connect.reload())
+			.pipe(connect.reload())
 			.pipe(gulp.dest('assets/css/app/'));
 	});
 	gulp.task('archive', function () {

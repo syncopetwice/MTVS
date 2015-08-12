@@ -21,12 +21,12 @@ $themes:
 @mixin theme($name, $color, $hover) {
 	html.#{$name} {
 
-		a.btn-u {
+	a.btn-u {
+		color: #fff;
+		&:hover {
 			color: #fff;
-			&:hover {
-				color: #fff;
-			}
 		}
+	}
 
 	// Files ::::::::::::::::::::::
 

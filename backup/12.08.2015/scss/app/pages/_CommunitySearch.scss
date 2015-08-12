@@ -1,0 +1,21 @@
+/* ----------------
+	CommunitySearch
+---------------- */
+.CommunitySearch {
+	.results {
+		text-align:center;
+		font-size: 13px;
+	}
+	.headline {
+		i {
+			border: #fff;
+		}
+	}
+	#resourceresults {
+		.table i.icon {
+			font-size: 1.8em;
+			border: 2px solid #777;
+			width: 36px;
+		}
+	}
+}

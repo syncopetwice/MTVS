@@ -1,0 +1,20 @@
+/* ----------------------
+	CommunityGroupManager
+---------------------- */
+.CommunityGroupManager {
+	// @include error-message;
+	&.profile {
+		.profile-edit {
+			hr {
+				margin: 10px 0 15px;
+			}
+		}
+	}
+	.pending-link {
+		color:#e9b605;
+		font-weight:bold;
+	}
+	.fa.fa-map-marker {
+		color: #72c02c;
+	}
+}

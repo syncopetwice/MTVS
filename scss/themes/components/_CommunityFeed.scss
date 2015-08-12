@@ -1,0 +1,13 @@
+.CommunityFeed {
+	i.expand-list.active {
+		color: $color;
+		border-color: $color;
+	}
+	#palist a.curr i.expand-list {
+		color: $color;
+		border-color: $color;
+	}
+	#palist a.curr:after {
+		color: $color;
+	}
+}

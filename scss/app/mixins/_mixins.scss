@@ -23,12 +23,15 @@
 			margin-bottom: $margin-bottom;
 			.messageTable {
 				width: 100%;
+				padding: 0;
+				margin: 0;
 				.messageText {
 					padding: 3px 10px;
 					border: 1px solid #ebccd1;
 					background-color: #f2dede;
 					color: #a94442;
 					span {
+						color: #cc0000;
 						h4 {
 							font-size: 13px;
 							margin: 0;

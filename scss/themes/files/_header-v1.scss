@@ -1,0 +1,40 @@
+.header-v1 .topbar-v1 .top-v1-data li a:hover i {
+	color: $color;
+}
+.header-v1 .navbar-default .navbar-toggle {
+	border-color: $hover;
+}
+.header-v1 .navbar-toggle,
+.header-v1 .navbar-default .navbar-toggle:hover, 
+.header-v1 .navbar-default .navbar-toggle:focus {
+	background: $color;
+}
+.header-v1 .navbar-toggle:hover {
+	background: $hover !important;
+}
+@media (max-width: 991px) {
+	.header-v1 .navbar-default .navbar-nav > li > a:hover {
+		color: $color;
+	}
+	.header-v1 .navbar-default .navbar-nav > .active > a,
+	.header-v1 .navbar-default .navbar-nav > .active > a:hover,
+	.header-v1 .navbar-default .navbar-nav > .active > a:focus {
+		background: $color;
+	}
+}
+@media (min-width: 992px) {
+	.header-v1 .navbar-default .navbar-nav > .active > a,
+	.header-v1 .navbar-default .navbar-nav > li > a:hover,
+	.header-v1 .navbar-default .navbar-nav > li > a:focus {
+		color: $color;
+	}
+	.header-v1 .navbar-default .navbar-nav > li:hover > a {
+		color: $color;
+	}
+	.header-v1 .dropdown-menu {
+		border-top-color: $color;
+	}
+}
+.header-v1 .navbar .nav > li > .search:hover {
+	color: $color;
+}

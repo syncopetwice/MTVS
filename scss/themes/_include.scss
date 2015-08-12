@@ -1,0 +1,41 @@
+a.btn-u {
+	color: #fff;
+	&:hover {
+		color: #fff;
+	}
+}
+
+// Files
+@import './files/_app.scss';
+@import './files/_ie8.scss';
+@import './files/_blocks.scss';
+@import './files/_plugins.scss';
+@import './files/_style-switcher.scss';
+@import './files/_header-v1.scss';
+@import './files/_style.scss';
+@import './files/_custom-sky-forms.scss';
+@import './files/_blog_magazine.scss';
+@import './files/_profile.scss';
+@import './files/_custom.scss';
+
+// Components
+@import './components/_CommunityFeed.scss';
+@import './components/_CommunityFeedNavigation.scss';
+@import './components/_CommunityMenu.scss';
+@import './components/_CommunityResourceDialog.scss';
+@import './components/_CommunityShare.scss';
+@import './components/_CommunityTagSelector.scss';
+@import './components/_CommunityUserPhoto.scss';
+
+// Pages
+@import './pages/_CommunityDiscover.scss';
+@import './pages/_CommunityEventDetail.scss';
+@import './pages/_CommunityFeed_MyMessages.scss';
+@import './pages/_CommunityGroupCreate.scss';
+@import './pages/_CommunityGroupManager.scss';
+@import './pages/_CommunityGroups.scss';
+@import './pages/_CommunityNewsDetail.scss';
+@import './pages/_CommunityNewsEdit.scss';
+@import './pages/_CommunityProfilePage.scss';
+@import './pages/_CommunityRegTerms.scss';
+@import './pages/_CommunityResourceDetail.scss';

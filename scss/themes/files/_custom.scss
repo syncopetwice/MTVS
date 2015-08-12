@@ -1,0 +1,9 @@
+.file-actions i.fa:hover {
+	color: $color;
+}
+.file-actions i.fa.active, .fa.fa-plus-circle.active {
+	color: $color;
+}
+.addGroups {
+	color: $color !important;
+}

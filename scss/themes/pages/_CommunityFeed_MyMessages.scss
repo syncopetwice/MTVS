@@ -1,0 +1,9 @@
+.CommunityFeed_MyMessages {
+	.media {
+		&.conversation {
+			&:hover {
+				background: lighten($color, 25%);
+			}
+		}
+	}
+}

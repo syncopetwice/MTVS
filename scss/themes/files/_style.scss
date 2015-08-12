@@ -1,0 +1,86 @@
+a {
+	color: $color;
+}
+a:hover {
+	color: $color;
+}
+.recent-work a:hover span {
+	border-bottom-color: $color;
+}
+.breadcrumb li.active,
+.breadcrumb li a:hover {
+	color: $color;
+}
+.thumbnail h3 a:hover,
+.thumbnail-style h3 a:hover {
+	color: $color;
+}
+.thumbnail-style a.btn-more {
+	background: $color;
+}
+.thumbnail-style a.btn-more:hover {
+	box-shadow: 0 0 0 2px $hover;
+	color: #fff;
+}
+.service-alternative .service:hover {
+	background: $color;
+}
+.posts .dl-horizontal dd a:hover {
+	color: $color;
+}
+.posts .dl-horizontal:hover dt img,
+.posts .dl-horizontal:hover dd a {
+	color: $color;
+	border-color: $color !important;
+}
+.team ul.team-socail li i:hover {
+	background: $color;
+}
+.team .thumbnail-style:hover h3 a {
+	color: $color !important;
+}
+.privacy a:hover {
+	color: $color;
+}
+ul.blog-tags a:hover {
+	background: $color;
+}
+.blog-photos li img:hover {
+	box-shadow: 0 0 0 2px $color;
+}
+.blog-twitter .blog-twitter-inner:hover {
+	border-color: $color;
+	border-top-color: $color;
+}
+.blog-twitter .blog-twitter-inner:hover:after {
+	border-top-color: $color;
+}
+.blog-twitter .blog-twitter-inner a {
+	color: $color;
+}
+.who li i {
+	color: $color;
+}
+.promo-box:hover strong, 
+.promo-box:hover strong a {
+	color: $color;
+}
+.info-blocks:hover i.icon-info-blocks {
+	color: $color;
+}
+.line-icon-page .item:hover {
+	color: $color;
+}
+.bs-glyphicons li:hover {
+	color: $color;
+}
+.share-list li i {
+	color: $color;
+}
+.testimonials-bs .carousel-control-v2 i:hover {
+	color: $color;
+	border-color: $color;
+}
+.profile .comment-list li:hover i {
+	color: $color;
+}

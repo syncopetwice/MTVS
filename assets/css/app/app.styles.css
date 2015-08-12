@@ -72,15 +72,16 @@ Base components
 /* Apex Form Validation */
 .calert { display: none; }
 .calert .message { display: block; margin-top: 0px; margin-bottom: 10px; }
-.calert .message .messageTable { width: 100%; }
+.calert .message .messageTable { width: 100%; padding: 0; margin: 0; }
 .calert .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.calert .message .messageTable .messageText span { color: #cc0000; }
 .calert .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
 .calert .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
 .calert .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
 .calert .message ul li:first-child { border-top: 1px solid #ebccd1; }
 .calert .message ul li:last-child { border-bottom: 1px solid #ebccd1; }
 
-.apexp .pbBody .errorMsg { color: #b61332; }
+.errorMsg { color: #b61332; }
 
 /* -----------
 Components
@@ -281,7 +282,7 @@ Pages
 .CommunityGroupCreate .create-group .title__container { padding-left: 35px; }
 .CommunityGroupCreate .create-group .buttons__container { padding-right: 25px; }
 .CommunityGroupCreate .calert h4 { font-size: 1.25em; margin-top: 0; color: inherit; }
-.CommunityGroupCreate span.nameok, .CommunityGroupCreate span.nameerr { margin-left: 5px; }
+.CommunityGroupCreate span.nameok, .CommunityGroupCreate span.nameerr { margin-left: 5px; margin-bottom: 5px; display: block; }
 .CommunityGroupCreate .nameok i, .CommunityGroupCreate .nameerr i { font-size: 1.5em; margin-right: 5px; vertical-align: middle; }
 .CommunityGroupCreate .nameok { color: #72c02c; }
 .CommunityGroupCreate .nameerr { color: #c00; }
@@ -384,7 +385,6 @@ Pages
 	CommunityResourceEdit
 ---------------------- */
 .CommunityResourceEdit .calert h4 { font-size: 1.25em; margin-top: -5px; color: inherit; }
-.CommunityResourceEdit .calert .messageText { height: 20px; color: inherit; }
 
 /* ----------------
 	CommunitySearch

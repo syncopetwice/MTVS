@@ -1,0 +1,19 @@
+.CommunityMenu {
+	.list-inline.top-v1-data {
+		a {
+			&:hover {
+				color: $color;
+			}
+		}
+	}
+	.navbar-default .navbar-nav > li {
+		> a {
+			&:focus {
+				color: #687074;
+			}
+			&:hover {
+				color: $color;
+			}
+		}
+	}
+}

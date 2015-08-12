@@ -1,0 +1,42 @@
+.block-grid-v1:hover {
+	border-color: $color;
+}
+.grid-block-v2 li:hover .grid-block-v2-info {
+	border-color: $color;
+}
+.news-v1 h3 a:hover {
+	color: $color;
+}
+.news-v1 .news-v1-info li a:hover {
+	color: $color;
+}
+.service-box-v1 p:after {
+	background: $color;
+}
+.service-box-v1 li {
+	border-top-color: $color;
+}
+.service-box-v1 li:hover {
+	color: $color;
+}
+.service-block-v1 i {
+	background: $color;
+}
+.team-v1 li:hover > p:before {
+	background: $color;
+}
+.portfolio-box .portfolio-box-in i {
+	background: $color;
+}
+.portfolio-box small.project-tag a:hover {
+	color: $color;
+}
+.portfolio-box-v2 .portfolio-box-v2-in i {
+	background: rgba($color, .8);
+}
+.portfolio-box-v2 .portfolio-box-v2-in i:hover {
+	background: $color;
+}
+.thumbnails-v1 .read-more {
+	color: $color;
+}

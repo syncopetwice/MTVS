@@ -1,0 +1,19 @@
+.CommunityTagSelector {
+	.panel-link .panel-heading {
+		color: $color;
+	}
+	.panel-success {
+		border-color: $color;
+		> .panel-heading {
+			color: $color;
+			border-color: $color;
+			background: lighten($color, 30%);
+		}
+	}
+	.tags-container {
+		.item {
+			background: #f7f7f7;
+			// color: $color;
+		}
+	}
+}

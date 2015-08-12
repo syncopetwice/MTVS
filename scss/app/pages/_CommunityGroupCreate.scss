@@ -2,7 +2,6 @@
 	CommunityGroupCreate
 --------------------- */
 .CommunityGroupCreate {
-	// @include error-message;
 	.row .bPageBlock {
 		border-top: 3px solid #72c02c;
 		margin-bottom:0;
@@ -37,6 +36,8 @@
 	span.nameok,
 	span.nameerr {
 		margin-left:5px;
+		margin-bottom: 5px;
+		display: block;
 	}
 	.nameok i,
 	.nameerr i {

@@ -1,0 +1,30 @@
+.counters span.counter-icon i {
+	background: $color;
+}
+.counters span.counter-icon i:after {
+	border-top-color: $color;
+}
+#topcontrol:hover {
+	background: $color;
+}
+.owl-btn:hover {
+	background: $color;
+}
+.owl-carousel-v5 .owl-controls .owl-page.active span,
+.owl-carousel-v5 .owl-controls.clickable .owl-page:hover span {
+	background: $color;
+}
+.testimonials-v3 .owl-buttons .owl-prev:hover,
+.testimonials-v3 .owl-buttons .owl-next:hover {
+	background: $color;
+}
+.owl-work-v1 .item a:hover span {
+	border-bottom-color: $color;
+}
+.fusion-portfolio #filters-container .cbp-filter-item-active {
+	background: $color;
+	border-color: $color;
+}
+.fusion-portfolio #filters-container .cbp-filter-item:hover {
+	color: $color;
+}

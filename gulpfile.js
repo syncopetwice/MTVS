@@ -35,22 +35,22 @@ var
 				browsers: ['last 2 versions', 'ie >= 8'],
 				cascade: false
 			}))
-			// .pipe(connect.reload())
 			.pipe(gulp.dest('assets/css/app/'));
 	});
+
 	// Themes
 	gulp.task('themes', function () {
-		return scss('./scss/themes/app.themes.scss', {
-			style: 'compact'
+		return scss('scss/themes/schemes/', {
+			style: 'compressed'
 		})
 			.pipe(plumber())
 			.pipe(autoprefixer({
 				browsers: ['last 2 versions', 'ie >= 8'],
 				cascade: false
 			}))
-			// .pipe(connect.reload())
-			.pipe(gulp.dest('assets/css/app/'));
+			.pipe(gulp.dest('assets/css/theme-colors/'));
 	});
+
 	gulp.task('archive', function () {
 		return gulp.src(
 			staticResources,

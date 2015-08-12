@@ -1,0 +1,16 @@
+.CommunityFeedNavigation {
+	.menu-item-link {
+		a {
+			&:hover {
+				color: $color;
+			}
+		}
+	}
+	.list-group-item {
+		&.active {
+			a:hover {
+				color: #fff;
+			}
+		}
+	}
+}

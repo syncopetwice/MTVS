@@ -1,0 +1,6 @@
+.sky-form .button {
+	background: $color;
+}
+.sky-form .rating input:checked ~ label {
+	color: $color; 
+}

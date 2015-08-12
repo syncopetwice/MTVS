@@ -1,0 +1,16 @@
+.CommunityProfilePage {
+	// #settings {
+	// 	.sky-form {
+	// 		.toggle {
+	// 			i {
+	// 				&.green-btn { border-color: $color !important;}
+	// 				&.green-btn:before { background-color: $color; }
+	// 				&.green-btn:after { color: $color; }
+	// 			}
+	// 		}
+	// 	}
+	// }
+	#digest {
+		i.rounded-x.fa { background: $color; border-color: $color; }
+	}
+}

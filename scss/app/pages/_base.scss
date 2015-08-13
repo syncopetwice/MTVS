@@ -91,3 +91,21 @@
 .display-inline-block {
 	display: inline-block;
 }
+// Fix for black color of focus & hover buttons
+.btn-u {
+	color: #fff;
+	&:hover,
+	&:focus {
+		color: #fff;
+	}
+	&.btn-u-accept,
+	&.btn-u-manager,
+	&.btn-u-owner,
+	&.btn-u-member {
+		background: #72c02c;
+		&:hover,
+		&:focus {
+			background: #5fb611;
+		}
+	}
+}

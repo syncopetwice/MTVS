@@ -69,6 +69,13 @@ Base components
 
 .display-inline-block { display: inline-block; }
 
+.btn-u { color: #fff; }
+.btn-u:hover, .btn-u:focus { color: #fff; }
+.btn-u.btn-u-accept, .btn-u.btn-u-manager, .btn-u.btn-u-owner, .btn-u.btn-u-member { background: #72c02c; }
+.btn-u.btn-u-accept:hover, .btn-u.btn-u-accept:focus, .btn-u.btn-u-manager:hover, .btn-u.btn-u-manager:focus, .btn-u.btn-u-owner:hover, .btn-u.btn-u-owner:focus, .btn-u.btn-u-member:hover, .btn-u.btn-u-member:focus { background: #5fb611; }
+
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable { display: none; }
+
 /* Apex Form Validation */
 .calert { display: none; }
 .calert .message { display: block; margin-top: 0px; margin-bottom: 10px; }
@@ -139,6 +146,7 @@ Components
 	CommunityFeedNavigation
 ------------------------ */
 .CommunityFeedNavigation .menu-item-link a:hover { color: #72c02c; text-decoration: underline; }
+.CommunityFeedNavigation .menu-item-link a:focus { color: #555; }
 .CommunityFeedNavigation ul li, .CommunityFeedNavigation ol li { margin-left: 0; }
 
 /* ---------------------------
@@ -380,7 +388,7 @@ Pages
 	CommunityResourceDetail
 ------------------------ */
 .CommunityResourceDetail .sky-form .dl-horizontal hr { margin: 6px 0; }
-.CommunityResourceDetail .sky-form a { color: #72c02c; }
+.CommunityResourceDetail .sky-form a { color: #666; }
 
 /* ----------------------
 	CommunityResourceEdit

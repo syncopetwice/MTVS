@@ -8,6 +8,9 @@
 				color: #72c02c;
 				text-decoration: underline;
 			}
+			&:focus {
+				color: #555;
+			}
 		}
 	}
 	ul li,

@@ -4,6 +4,7 @@ a.btn-u {
 		color: #fff;
 	}
 }
+// Themes
 
 // Files
 @import './files/_app.scss';
@@ -32,6 +33,7 @@ a.btn-u {
 @import './pages/_CommunityEventDetail.scss';
 @import './pages/_CommunityFeed_MyMessages.scss';
 @import './pages/_CommunityGroupCreate.scss';
+@import './pages/_CommunityGroupDetailPage.scss';
 @import './pages/_CommunityGroupManager.scss';
 @import './pages/_CommunityGroups.scss';
 @import './pages/_CommunityNewsDetail.scss';

@@ -4,6 +4,9 @@
 			&:hover {
 				color: $color;
 			}
+			&:focus {
+				color: $color;
+			}
 		}
 	}
 	.list-group-item {

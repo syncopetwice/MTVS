@@ -233,6 +233,7 @@ Pages
 .CommunityDiscover .tooltip-inner { max-width: 500px; text-align: left; }
 .CommunityDiscover .tooltip-inner li { color: white; }
 .CommunityDiscover .tooltips.s-tip { background-color: #72c02c; color: white; padding: 5px 10px; text-decoration: none; }
+.CommunityDiscover h1 span { color: #72c02c; }
 
 /* ---------------------
 	CommunityEventDetail

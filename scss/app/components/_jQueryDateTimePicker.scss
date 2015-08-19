@@ -1,0 +1,17 @@
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div:hover {
+	background: #5fb611 !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box >div >div.xdsoft_current {
+	background: #72c02c;
+	box-shadow: none;
+	color: #fff;
+}
+
+// Today Date
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+	color: #666;
+}

@@ -1,22 +1,25 @@
 .CommunityTagSelector {
-	// .panel-link .panel-heading {
-	// 	color: $color;
-	// }
-	// .panel-success {
-	// 	border-color: $color;
-	// 	> .panel-heading {
-	// 		color: $color;
-	// 		border-color: $color;
-	// 		background: lighten($color, 30%);
-	// 	}
-	// }
-	// .tags-container {
-	// 	.item {
-	// 		background: #f7f7f7;
-	// 		// color: $color;
-	// 	}
-	// }
+	.panel-link .panel-heading {
+		color: $color;
+	}
+	.panel-success {
+		border-color: $color;
+		> .panel-heading {
+			color: $color;
+			border-color: $color;
+			background: lighten($color, 30%);
+		}
+	}
+	.tags-container {
+		.item {
+			background: #f7f7f7;
+			color: $color;
+			.remove {
+				color: $color;
+			}
+		}
+	}
 	ul.blog-tags a:hover {
-		background: #72c02c;
+		background: $hover;
 	}
 }

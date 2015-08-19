@@ -69,6 +69,8 @@ Base components
 
 .display-inline-block { display: inline-block; }
 
+a:focus { color: #72c02c; }
+
 .btn-u { color: #fff; }
 .btn-u:hover, .btn-u:focus { color: #fff; }
 .btn-u.btn-u-accept, .btn-u.btn-u-manager, .btn-u.btn-u-owner, .btn-u.btn-u-member { background: #72c02c; }
@@ -165,6 +167,8 @@ Components
 .CommunityMenu .list-inline.top-v1-data a:hover { color: #72c02c; }
 .CommunityMenu .navbar-default .navbar-nav > li > a:focus { color: #687074; }
 .CommunityMenu .navbar-default .navbar-nav > li > a:hover { color: #72c02c; }
+.CommunityMenu.header-v1.header-fixed-shrink .navbar-brand img { width: auto; }
+.CommunityMenu #imgLOGOID { max-height: 40px; max-width: 300px; }
 
 /* ------------------------
 	CommunityResourceDialog
@@ -225,6 +229,12 @@ Components
 .CommunityUserPhoto .jcrop-keymgr { opacity: 0; }
 .CommunityUserPhoto .imgsizeStyle { max-height: 350px; }
 .CommunityUserPhoto .preview-img__container { width: 100px; height: 100px; overflow: hidden; float: left; margin-right: 15px; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover { background: #5fb611 !important; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current { background: #72c02c; box-shadow: none; color: #fff; }
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today { color: #666; }
 
 /* ------
 Pages
@@ -357,6 +367,7 @@ Pages
 /* ---------------------
 	CommunityProfilePage
 --------------------- */
+.CommunityProfilePage a:hover { color: #72c02c; }
 .CommunityProfilePage .p-st-blk { display: inline-block; width: 40px; text-align: right; vertical-align: middle; height: 24px; margin-top: -12px; }
 .CommunityProfilePage .p-chb { font-size: 1.3em; color: #FF7F50; font-weight: bold; vertical-align: middle; }
 .CommunityProfilePage .fa.fa-spinner.fa-pulse { font-size: 14px; }

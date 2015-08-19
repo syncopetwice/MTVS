@@ -30,4 +30,13 @@
 			}
 		}
 	}
+	// Logotype Fix
+	&.header-v1.header-fixed-shrink .navbar-brand img {
+		width: auto;
+	}
+	// Logo
+	#imgLOGOID {
+		max-height: 40px;
+		max-width: 300px;
+	}
 }

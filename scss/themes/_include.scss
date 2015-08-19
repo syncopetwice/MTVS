@@ -1,5 +1,6 @@
 // Themes
 
+@import './pages/_base.scss';
 // Files
 @import './files/_app.scss';
 @import './files/_ie8.scss';
@@ -21,6 +22,7 @@
 @import './components/_CommunityShare.scss';
 @import './components/_CommunityTagSelector.scss';
 @import './components/_CommunityUserPhoto.scss';
+@import './components/_jQueryDateTimePicker.scss';
 
 // Pages
 @import './pages/_CommunityDiscover.scss';

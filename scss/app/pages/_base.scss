@@ -91,6 +91,10 @@
 .display-inline-block {
 	display: inline-block;
 }
+// Fix for bootstrap focus link
+a:focus {
+	color: #72c02c;
+}
 // Fix for black color of focus & hover buttons
 .btn-u {
 	color: #fff;

@@ -21,9 +21,13 @@ Base components
 
 .margin-bottom-20 { margin-bottom: 20px; }
 
+.margin-right-10 { margin-right: 10px; }
+
 .margin-20 { margin: 20px; }
 
 .padding-10 { padding: 10px; }
+
+.padding-left-right-15 { padding: 15px; }
 
 .padding-left-35 { padding-left: 35px; }
 
@@ -111,7 +115,7 @@ Components
 .CommunityFeed .media-body .d-link { border: 1px solid #ddd; padding: 5px 12px; }
 .CommunityFeed .media-body .d-link:hover { background-color: #eee; color: #555; text-decoration: none; }
 .CommunityFeed textarea.form-control { resize: vertical; }
-.CommunityFeed .mentions-input-box .mentions-autocomplete-list { display: none; background: #fff; border: 1px solid #b2b2b2; position: absolute; z-index: 10000; margin-top: -2px; border-radius: 5px; border-top-right-radius: 0; border-top-left-radius: 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14844); }
+.CommunityFeed .mentions-input-box .mentions-autocomplete-list { display: none; background: #fff; border: 1px solid #b2b2b2; position: absolute; z-index: 10000; border-radius: 5px; border-top-right-radius: 0; border-top-left-radius: 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14844); }
 .CommunityFeed .mentions-input-box .mentions-autocomplete-list ul { margin: 0; padding: 0; }
 .CommunityFeed .mentions-input-box .mentions-autocomplete-list li { background-color: #fff; padding: 0 5px; margin: 0; width: auto; border-bottom: 1px solid #eee; height: 26px; line-height: 26px; overflow: hidden; cursor: pointer; list-style: none; white-space: nowrap; }
 .CommunityFeed .mentions-input-box .mentions-autocomplete-list li:last-child { border-radius: 5px; }
@@ -368,6 +372,7 @@ Pages
 	CommunityProfilePage
 --------------------- */
 .CommunityProfilePage a:hover { color: #72c02c; }
+.CommunityProfilePage .btn-u:hover { color: #fff; }
 .CommunityProfilePage .p-st-blk { display: inline-block; width: 40px; text-align: right; vertical-align: middle; height: 24px; margin-top: -12px; }
 .CommunityProfilePage .p-chb { font-size: 1.3em; color: #FF7F50; font-weight: bold; vertical-align: middle; }
 .CommunityProfilePage .fa.fa-spinner.fa-pulse { font-size: 14px; }
@@ -416,3 +421,6 @@ Pages
 /* ------------------------
 	CommunityShowEditObject
 ------------------------ */
+/* ---------------
+	CommunityTopic
+--------------- */

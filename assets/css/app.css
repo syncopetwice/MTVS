@@ -660,6 +660,24 @@ h3.title-v3-xs {
   color: #fff; 
   background: #72c02c; 
 }
+/* Fixed 21.08.2015 */
+.tab-v1 .nav-tabs>li {
+  margin-bottom: 0;
+}
+/* End :: Fixed 21.08.2015 */
+
+
+/*.tab-v1 .nav-tabs > li > a:focus {
+  color: #555;
+}*/
+
+/*.tab-v1 .nav-tabs > li > a:focus:hover { 
+  color: #fff;
+}*/
+
+/*.tab-v1 .nav>li>a:focus {
+  background: none;
+}*/
 
 .tab-v1 .tab-content { 
   padding: 10px 0;

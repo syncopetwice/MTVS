@@ -16,6 +16,11 @@ Base components
 /* -----------
 Components
 ------------*/
+// Modal 
+@import 'components/CommunityTopicModal';
+// End :: Modal
+@import 'components/Dropdown';
+@import 'components/Sorting';
 
 @import 'components/CommunityAboutGroup';
 @import 'components/CommunityFeed';

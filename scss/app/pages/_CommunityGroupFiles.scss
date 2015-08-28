@@ -12,4 +12,25 @@
 		margin-left:auto;
 		margin-right:auto;
 	}
+	// Fix for focus headings link
+	.panel.panel-success {
+		.panel-body {
+			.list-unstyled.blog-tags {
+				li {
+					a {
+						&:focus {
+							color: #555;
+						}
+					}
+				}
+			}
+		}
+	}
+	#selectedGroup {
+		#groupsContainer {
+			.remove {
+				margin-left: 5px;
+			}
+		}
+	}
 }

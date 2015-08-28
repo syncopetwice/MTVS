@@ -1,0 +1,9 @@
+// Follow Dropdown Menu
+.dropdown__container {
+	.dropdown__button {
+		background: $color;
+		&:hover {
+			background: $hover;
+		}
+	}
+}

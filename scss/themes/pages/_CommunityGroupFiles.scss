@@ -1,0 +1,17 @@
+// Modal
+#cglayout {
+	.modal-dialog {
+		.panel-success {
+			border-color: $color;
+			> .panel-heading {
+				color: $color;
+				border-color: $color;
+				background: lighten($color, 30%);
+			}
+		}
+		.groups-container .item {
+			color: $color;
+			background: #fff;
+		}
+	}
+}

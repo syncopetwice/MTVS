@@ -1,0 +1,19 @@
+// Community Topic Modal
+.CommunityTopicModal {
+	padding: 15px;
+	padding-bottom: 0;
+	.sky-form {
+		border: none;
+		.label {
+			padding: 0;
+		}
+	}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.subtitle {
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+}

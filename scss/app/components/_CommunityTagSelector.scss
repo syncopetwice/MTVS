@@ -132,4 +132,27 @@
 	.panel-link .panel-heading span:hover {
 		text-decoration:underline;
 	}
+	// Fix for focus headings link
+	.panel.panel-default {
+		.panel-heading {
+			.panel-title {
+				a {
+					&:focus {
+						color: #000;
+					}
+				}
+			}
+		}
+		.panel-body {
+			.list-unstyled.blog-tags {
+				li {
+					a {
+						&:focus {
+							color: #555;
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -80,4 +80,18 @@
 	.panel-collapse.collapse {
 		height: 0;
 	}
+	// Fix for focus tags
+	.panel-group {
+		.panel-body {
+			.list-unstyled.blog-tags {
+				li {
+					a {
+						&:focus {
+							color: #555;
+						}
+					}
+				}
+			}
+		}
+	}
 }

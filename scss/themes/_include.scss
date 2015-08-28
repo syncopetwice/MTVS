@@ -22,7 +22,9 @@
 @import './components/_CommunityShare.scss';
 @import './components/_CommunityTagSelector.scss';
 @import './components/_CommunityUserPhoto.scss';
+@import './components/_Dropdown.scss';
 @import './components/_jQueryDateTimePicker.scss';
+@import './components/_Sorting.scss';
 
 // Pages
 @import './pages/_CommunityDiscover.scss';
@@ -30,6 +32,7 @@
 @import './pages/_CommunityFeed_MyMessages.scss';
 @import './pages/_CommunityGroupCreate.scss';
 @import './pages/_CommunityGroupDetailPage.scss';
+@import './pages/_CommunityGroupFiles.scss';
 @import './pages/_CommunityGroupManager.scss';
 @import './pages/_CommunityGroups.scss';
 @import './pages/_CommunityNewsDetail.scss';

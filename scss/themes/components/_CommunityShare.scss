@@ -2,4 +2,8 @@
 	.addGroups {
 		color: $color !important;
 	}
+	.groups-container .item {
+		color: $color;
+		background: #fff;
+	}
 }

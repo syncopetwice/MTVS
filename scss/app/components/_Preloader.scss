@@ -1,0 +1,20 @@
+.preloader__container {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+	.preloader__element {
+		position: absolute;
+		top: 140px;
+		left: 44%;
+		.preloader__icon {
+			color: #72c02c;
+			font-size: 35px;
+		}
+	}
+}

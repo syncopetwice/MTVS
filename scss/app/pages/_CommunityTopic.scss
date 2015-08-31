@@ -7,7 +7,18 @@
 		margin-bottom: 10px;
 		padding-top: 0;
 	}
-	// .profile-body {
-	// 	padding-top: 0;
-	// }
+	#followButton {
+		display: none;
+	}
+	.profile-body {
+		position: relative;
+	}
+	// Fix for Pager
+	.pager li > a:focus {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		color: #555;
+	}
+	@import '../components/Preloader';
+	@import '../components/MediaTable';
 }

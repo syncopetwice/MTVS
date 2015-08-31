@@ -1,0 +1,34 @@
+// Usage ::
+// Community Topic Page
+.media__table {
+	margin-bottom: 20px;
+	tr:first-child td {
+		border-top: none;
+	}
+	tr {
+		td {
+			vertical-align: middle;
+		}
+	}
+	.media__table__td__link {
+		width: 60%;
+		a {
+			font-weight: bold;
+			color: #555;
+			&:hover {
+				color: #555;
+			}
+		}
+	}
+	.media__table__td__talking {
+		width: 20%;
+		color: #555;
+		text-align: right;
+	}
+	.media__table__td__buttons {
+		text-align: right;
+		.fa {
+			margin-right: 5px;
+		}
+	}
+}

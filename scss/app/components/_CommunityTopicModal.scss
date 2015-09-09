@@ -4,6 +4,9 @@
 	padding-bottom: 0;
 	.sky-form {
 		border: none;
+		.input {
+			@include disabled;
+		}
 		.label {
 			padding: 0;
 		}

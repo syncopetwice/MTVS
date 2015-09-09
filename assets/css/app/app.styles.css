@@ -91,6 +91,7 @@ a:focus { color: #72c02c; }
 .calert .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
 .calert .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
 .calert .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
+.calert .message ul li p { color: #a94442; margin: 10px 0; }
 .calert .message ul li:first-child { border-top: 1px solid #ebccd1; }
 .calert .message ul li:last-child { border-bottom: 1px solid #ebccd1; }
 
@@ -101,6 +102,8 @@ Components
 ------------*/
 .CommunityTopicModal { padding: 15px; padding-bottom: 0; }
 .CommunityTopicModal .sky-form { border: none; }
+.CommunityTopicModal .sky-form .input.disabled { color: #777; }
+.CommunityTopicModal .sky-form .input.disabled:before { content: ''; position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; background: rgba(238, 238, 238, 0.5); -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; }
 .CommunityTopicModal .sky-form .label { padding: 0; }
 .CommunityTopicModal h2 { margin-top: 0; margin-bottom: 10px; }
 .CommunityTopicModal .subtitle { font-size: 11px; margin-bottom: 5px; }
@@ -335,6 +338,7 @@ Pages
 /*----------------------
 	CommunityGroupCreate
 --------------------- */
+.CommunityGroupCreate .profile-body { padding-top: 0; margin-bottom: 40px; }
 .CommunityGroupCreate .row .bPageBlock { border-top: 3px solid #72c02c; margin-bottom: 0; }
 .CommunityGroupCreate .row.u-page-block { background: #f8f8f8; padding: 15px; margin: 0; border-top: 3px solid #72c02c; }
 .CommunityGroupCreate .create-group .title__container { padding-left: 35px; }
@@ -477,3 +481,14 @@ Pages
 .CommunityTopic .media__table .media__table__td__talking { width: 20%; color: #555; text-align: right; }
 .CommunityTopic .media__table .media__table__td__buttons { text-align: right; }
 .CommunityTopic .media__table .media__table__td__buttons .fa { margin-right: 5px; }
+.CommunityTopic .calert { display: none; }
+.CommunityTopic .calert .message { display: block; margin-top: 0px; margin-bottom: 10px; }
+.CommunityTopic .calert .message .messageTable { width: 100%; padding: 0; margin: 0; }
+.CommunityTopic .calert .message .messageTable .messageText { padding: 3px 10px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+.CommunityTopic .calert .message .messageTable .messageText span { color: #cc0000; }
+.CommunityTopic .calert .message .messageTable .messageText span h4 { font-size: 13px; margin: 0; }
+.CommunityTopic .calert .message ul { width: 100%; padding: 0 !important; list-style-type: none; }
+.CommunityTopic .calert .message ul li { padding: 3px 10px !important; background-color: #f2dede; border-left: 1px solid #ebccd1; border-right: 1px solid #ebccd1; color: #a94442; display: block; }
+.CommunityTopic .calert .message ul li p { color: #a94442; margin: 10px 0; }
+.CommunityTopic .calert .message ul li:first-child { border-top: 1px solid #ebccd1; }
+.CommunityTopic .calert .message ul li:last-child { border-bottom: 1px solid #ebccd1; }

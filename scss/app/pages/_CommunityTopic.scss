@@ -21,4 +21,5 @@
 	}
 	@import '../components/Preloader';
 	@import '../components/MediaTable';
+	@include error-message;
 }

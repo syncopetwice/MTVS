@@ -133,15 +133,41 @@
 		margin-top: 20px;
 		display: inline-block;
 	}
-	.file-info {
-		padding-left: 13px;
+	// .file-info {
+	// 	padding-left: 13px;
+	// }
+	// .file-title {
+	// 	margin-bottom: 2px;
+	// }
+	// .file-section {
+	// 	display: flex;
+	// }
+
+	// Image / PDF Loaded
+	.image-link__container {
+		a {
+			display: block;
+		}
+		&--pdf {
+			margin-right: 40px;
+		}
 	}
-	.file-title {
-		margin-bottom: 2px;
+	// Download Links
+	.download-links__container {
+		margin: 5px 0;
+		@include clearfix;
+		font-size: 12px;
+		.download-links__file__container {
+			margin-right: 20px;
+			&--pdf {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+		.download-links__file-size__container {
+		}
 	}
-	.file-section {
-		display: flex;
-	}
+	// End :: Image / PDF Loaded
 	:focus::-webkit-input-placeholder {color: transparent}
 	:focus::-moz-placeholder          {color: transparent}
 	:focus:-moz-placeholder           {color: transparent}

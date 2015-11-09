@@ -1,0 +1,87 @@
+/* --------
+	Tooltip
+-------- */
+// Hide Loading at the bottom of the page
+.individualPalette.lookupHoverDetail.lookupHoverDetailLoading.lookupHoverDetailOverridable {
+	.topLeft {
+		display: none;
+	}
+}
+// Hide contact info
+.contactBlock.topLeft {
+	display: none;
+}
+// Tooltip on hover link
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable {
+	width: 320px;
+	height: auto;
+	z-index: 99;
+	font: 13px 'Open Sans', Helvetica, Arial, sans-serif;
+	position: absolute;
+	margin: 5px 0;
+	color: #666;
+	// User Profile Block
+	.userProfileHoverUserBlock {
+		padding: 5px 7px 7px 7px;
+		background: #fafafa;
+		border: 1px solid #ddd;
+		.pbHeader {
+			margin-bottom: 2px;
+		}
+		.userProfileHoverHeaderContent {
+			a {
+				font-size: 13px;
+			}
+		}
+	}
+	// User Profile
+	.userProfileHoverBody.pbBody {
+		h4 {
+			font-size: 13px;
+			line-height: 14px;
+		}
+		.detailList {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+			tr {
+				border-bottom: 1px solid #eee;
+				&:last-child {
+					border-bottom: none;
+				}
+				td {
+					padding: 5px;
+					&.labelCol {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.userProfileHoverDetailTable {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+			// Photo
+			.userProfileHoverPhotoCell {
+				width: 20%;
+				vertical-align: top;
+			}
+			.userProfileHoverContent {
+				.detailList {
+					tr {
+						border-left: 1px solid #eee;
+						td {
+							padding-left: 10px;
+							&.labelCol {
+								width: 10%;
+							}
+							&.dataCol {
+								width: 90%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

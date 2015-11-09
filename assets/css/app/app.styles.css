@@ -19,6 +19,8 @@ Base components
 
 .margin-bottom-10 { margin-bottom: 10px; }
 
+.margin-bottom-15 { margin-bottom: 15px; }
+
 .margin-bottom-20 { margin-bottom: 20px; }
 
 .margin-right-10 { margin-right: 10px; }
@@ -57,6 +59,8 @@ Base components
 
 .height-0 { height: 0; }
 
+.max-height-500 { max-height: 500px; }
+
 .text-align-left { text-align: left; }
 
 .text-decoration-none { text-decoration: none; }
@@ -80,8 +84,9 @@ a:focus { color: #72c02c; }
 .btn-u.btn-u-accept, .btn-u.btn-u-manager, .btn-u.btn-u-owner, .btn-u.btn-u-member { background: #72c02c; }
 .btn-u.btn-u-accept:hover, .btn-u.btn-u-accept:focus, .btn-u.btn-u-manager:hover, .btn-u.btn-u-manager:focus, .btn-u.btn-u-owner:hover, .btn-u.btn-u-owner:focus, .btn-u.btn-u-member:hover, .btn-u.btn-u-member:focus { background: #5fb611; }
 
-.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable { display: none; }
-
+/* -----------
+Components
+------------*/
 /* Apex Form Validation */
 .calert { display: none; }
 .calert .message { display: block; margin-top: 0px; margin-bottom: 10px; }
@@ -97,9 +102,6 @@ a:focus { color: #72c02c; }
 
 .errorMsg { color: #b61332; }
 
-/* -----------
-Components
-------------*/
 .CommunityTopicModal { padding: 15px; padding-bottom: 0; }
 .CommunityTopicModal .sky-form { border: none; }
 .CommunityTopicModal .sky-form .input.disabled { color: #777; }
@@ -134,10 +136,40 @@ Components
 .sorting__container .sorting__options .sorting__options__group ul li.active { padding-left: 0; }
 .sorting__container .sorting__options .sorting__options__group ul li.active i { float: left; margin: 5px 10px 0 5px; font-size: 11px; }
 
+/* --------
+	Tooltip
+-------- */
+.individualPalette.lookupHoverDetail.lookupHoverDetailLoading.lookupHoverDetailOverridable .topLeft { display: none; }
+
+.contactBlock.topLeft { display: none; }
+
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable { width: 320px; height: auto; z-index: 99; font: 13px 'Open Sans', Helvetica, Arial, sans-serif; position: absolute; margin: 5px 0; color: #666; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverUserBlock { padding: 5px 7px 7px 7px; background: #fafafa; border: 1px solid #ddd; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverUserBlock .pbHeader { margin-bottom: 2px; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverUserBlock .userProfileHoverHeaderContent a { font-size: 13px; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody h4 { font-size: 13px; line-height: 14px; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .detailList { width: 100%; border-collapse: collapse; border-spacing: 0; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .detailList tr { border-bottom: 1px solid #eee; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .detailList tr:last-child { border-bottom: none; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .detailList tr td { padding: 5px; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .detailList tr td.labelCol { font-weight: bold; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable { width: 100%; border-collapse: collapse; border-spacing: 0; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable .userProfileHoverPhotoCell { width: 20%; vertical-align: top; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable .userProfileHoverContent .detailList tr { border-left: 1px solid #eee; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable .userProfileHoverContent .detailList tr td { padding-left: 10px; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable .userProfileHoverContent .detailList tr td.labelCol { width: 10%; }
+.individualPalette.lookupHoverDetail.lookupHoverDetailOverridable .userProfileHoverBody.pbBody .userProfileHoverDetailTable .userProfileHoverContent .detailList tr td.dataCol { width: 90%; }
+
 /* --------------------
 	CommunityAboutGroup 
 -------------------- */
 .CommunityAboutGroup .errorText { padding: 15px 30px; margin-bottom: 20px; border: 1px solid #ebccd1; background-color: #f2dede; color: #a94442; }
+
+/* ------------------------
+	Categories
+------------------------ */
+.paddingCategories .content-boxes-v3 i.icon-custom { top: 0; }
+.paddingCategories .content-boxes-v3 .content-boxes-in-v3 h3 { margin-bottom: 0; }
 
 /* --------------
 	CommunityFeed
@@ -169,9 +201,13 @@ Components
 .CommunityFeed .pollfieldset .progress.progress-u.progress-sm { margin-bottom: 0px; }
 .CommunityFeed .pollfieldset li.pollchoice { height: 50px; }
 .CommunityFeed .pollvotecount { margin-top: 20px; display: inline-block; }
-.CommunityFeed .file-info { padding-left: 13px; }
-.CommunityFeed .file-title { margin-bottom: 2px; }
-.CommunityFeed .file-section { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.CommunityFeed .image-link__container a { display: block; }
+.CommunityFeed .image-link__container--pdf { margin-right: 40px; }
+.CommunityFeed .download-links__container { margin: 5px 0; font-size: 12px; }
+.CommunityFeed .download-links__container:before, .CommunityFeed .download-links__container:after { content: " "; display: table; }
+.CommunityFeed .download-links__container:after { clear: both; }
+.CommunityFeed .download-links__container .download-links__file__container { margin-right: 20px; }
+.CommunityFeed .download-links__container .download-links__file__container--pdf { margin-right: 0; margin-bottom: 10px; }
 .CommunityFeed :focus::-webkit-input-placeholder { color: transparent; }
 .CommunityFeed :focus::-moz-placeholder { color: transparent; }
 .CommunityFeed :focus:-moz-placeholder { color: transparent; }
@@ -207,6 +243,11 @@ Components
 .CommunityMenu .navbar-default .navbar-nav > li > a:focus { color: #687074; }
 .CommunityMenu .navbar-default .navbar-nav > li > a:hover { color: #72c02c; }
 .CommunityMenu.header-v1.header-fixed-shrink .navbar-brand img { width: auto; }
+.CommunityMenu .topbar-v1 { border-top: none; }
+@media (max-width: 991px) { .CommunityMenu .topbar-v1 .top-v1-contacts { margin: 0; text-align: left !important; }
+  .CommunityMenu .topbar-v1 ul { text-align: right !important; }
+  .CommunityMenu .topbar-v1 .top-v1-data li { top: 0; border-bottom: 0; }
+  .CommunityMenu .topbar-v1 .top-v1-data li:last-child { border-right: solid 1px #eee; margin-left: -5px; } }
 .CommunityMenu #imgLOGOID { max-height: 40px; max-width: 300px; }
 
 /* ------------------------

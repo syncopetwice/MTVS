@@ -11,7 +11,7 @@
 (function ($, _, undefined) {
 
   // Settings
-  var KEY = { BACKSPACE : 8, TAB : 9, RETURN : 13, ESC : 27, LEFT : 37, UP : 38, RIGHT : 39, DOWN : 40, COMMA : 188, SPACE : 32, HOME : 36, END : 35, SBRACKETS : 221 }; // Keys "enum"
+  var KEY = { DELETE: 46, BACKSPACE : 8, TAB : 9, RETURN : 13, ESC : 27, LEFT : 37, UP : 38, RIGHT : 39, DOWN : 40, COMMA : 188, SPACE : 32, HOME : 36, END : 35, SBRACKETS : 221 }; // Keys "enum"
   var CHARS = { SBRACKETS : 93,COMMA:44}; // Keys "enum"
 
   var countWords = 0;
@@ -64,7 +64,7 @@
     
       term = term.replace(/([\'\.\*\+\?\^\=\!\:\$\{\}\(\)\|\[\]\/\\])/g, "\\$1");
 
-      var retval = value.replace(new RegExp("(\'\?\!\[\^\&\;\]\+\;\)\(\?\!\<\[\^\<\>\]\*)(" + term + ")(\'\?\!\[\^\<\>\]\*\>\)\(\?\!\[\^\&\;\]\+\;)", "gi"), "<b>$1</b>");
+      var retval = value.replace(new RegExp("(\\\'\?\!\[\^\&\;\]\+\;\)\(\?\!\<\[\^\<\>\]\*)(" + term + ")(\\\'\?\!\[\^\<\>\]\*\>\)\(\?\!\[\^\&\;\]\+\;)", "gi"), "<b>$1</b>");
       //console.log(retval);      
       return retval;
     },
@@ -159,7 +159,7 @@
 
       _.each(mentionsCollection, function (mention) {
 
-        var textSyntax = mention.type == 'user' || mention.type == 'group' ? settings.templates.mentionItemSyntax(mention) : settings.templates.hashItemSyntax(mention);
+        var textSyntax = mention.type == 'user' || mention.type == 'group'  ? settings.templates.mentionItemSyntax(mention) : settings.templates.hashItemSyntax(mention);
     syntaxMessage = syntaxMessage.replace(new RegExp(utils.regexpEncode(mention.value), 'g'), textSyntax);
       });
 
@@ -172,8 +172,8 @@
 
         mentionText = mentionText.replace(new RegExp(utils.regexpEncode(textSyntax), 'g'), textHighlight);
       });
-
-      mentionText = mentionText.replace(/\n/g, '<br />'); //Replace the escape character for <br />
+      
+      mentionText = mentionText.replace(/\n/g, '<br/>'); //Replace the escape character for <br />
       mentionText = mentionText.replace(/ {2}/g, '&nbsp; '); //Replace the 2 preceding token to &nbsp;
 
       elmInputBox.data('messageText', syntaxMessage); //Save the messageText to elmInputBox
@@ -198,7 +198,7 @@
     }
 
   //Adds mention to mentions collections 
-    function addMention(mention, chBrackets) {
+    function addMention(mention) {
     var currentMessage = getInputBoxValue(); //Get the actual value of the text area
       // Using a regex to figure out positions
       var regexM = new RegExp();
@@ -233,13 +233,7 @@
 
       hideAutoComplete();
       // Mentions and syntax message
-      var updatedMessageText;
-      if(chBrackets){
-        updatedMessageText = start + charVariable+'[' +mention.value + end;
-      }else{
-        updatedMessageText = start + charVariable+'[' +mention.value + '] ' + end;
-      }
-      
+      var updatedMessageText = start + charVariable+'[' +mention.value + '] ' + end;
       elmInputBox.val(updatedMessageText); //Set the value to the txt area
     elmInputBox.trigger('mention');
       updateValues();
@@ -338,11 +332,7 @@
         inputBuffer.push(typedValue); //Push the value pressed into inputBuffer
       }
       if ((e.charCode  === CHARS.COMMA || e.charCode  === CHARS.SBRACKETS) && charVariable == '#') {
-        var chBrackets;
-        if(e.charCode  === CHARS.SBRACKETS){
-          chBrackets = true;
-        }
-        addMention(createHashTagItem(), chBrackets);
+        addMention(createHashTagItem());
         hideAutoComplete();
         countWords = 0;
         return;
@@ -356,7 +346,7 @@
       if (e.keyCode === KEY.LEFT || e.keyCode === KEY.RIGHT || e.keyCode === KEY.HOME || e.keyCode === KEY.END) {
         // Defer execution to ensure carat pos has changed after HOME/END keys then call the resetBuffer function
         _.defer(resetBuffer);
-
+        //inputBuffer = inputBuffer.slice(0, -1 + inputBuffer.length); // Can't use splice, not available in IE
         // IE9 doesn't fire the oninput event when backspace or delete is pressed. This causes the highlighting
         // to stay on the screen whenever backspace is pressed after a highlighed word. This is simply a hack
         // to force updateValues() to fire when backspace/delete is pressed in IE9.
@@ -368,7 +358,7 @@
       }
 
     //If the key pressed was the backspace
-      if (e.keyCode === KEY.BACKSPACE) {
+      if (e.keyCode === KEY.BACKSPACE ) {
         inputBuffer = inputBuffer.slice(0, -1 + inputBuffer.length); // Can't use splice, not available in IE
         if(inputBuffer<=2) hideAutoComplete();
         return;

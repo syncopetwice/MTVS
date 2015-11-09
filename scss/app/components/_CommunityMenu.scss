@@ -34,6 +34,27 @@
 	&.header-v1.header-fixed-shrink .navbar-brand img {
 		width: auto;
 	}
+	.topbar-v1 {
+		border-top: none;
+	}
+	// Mobile & Tablet View menu fix
+	@media (max-width: 991px) {
+		.topbar-v1 .top-v1-contacts {
+			margin: 0;
+			text-align: left !important;
+		}
+		.topbar-v1 ul {
+			text-align: right !important;
+		}
+		.topbar-v1 .top-v1-data li {
+			top: 0;
+			border-bottom: 0;
+		}
+		.topbar-v1 .top-v1-data li:last-child {
+			border-right: solid 1px #eee;
+			margin-left: -5px;
+		}
+	}
 	// Logo
 	#imgLOGOID {
 		max-height: 40px;

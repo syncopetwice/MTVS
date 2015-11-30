@@ -1,4 +1,11 @@
 .CommunityFeed {
+	.preloader__container {
+		.preloader__element {
+			.preloader__icon {
+				color: $color;
+			}
+		}
+	}
 	i.expand-list.active {
 		color: $color;
 		border-color: $color;

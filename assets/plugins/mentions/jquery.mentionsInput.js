@@ -23,19 +23,21 @@
     allowRepeat   : false, //Allow repeat mentions
     showAvatars   : true, //Show the avatars
     elastic       : true, //Grow the textarea automatically
-  onCaret       : false,
+    editMessage   : '',
+    prefillMentions : [],
+    onCaret       : false,
     classes       : {
-      autoCompleteItemActive : "active" //Classes to apply in each item
+    autoCompleteItemActive : "active" //Classes to apply in each item
     },
     templates     : {
       wrapper                    : _.template('<div class="mentions-input-box"></div>'),
       autocompleteList           : _.template('<div class="mentions-autocomplete-list"></div>'),
-    autocompleteListItem       : _.template('<li data-ref-id="<%= id %>" data-ref-type="<%= type %>" data-display="<%= display %>"><%= content %></li>'),
-    autocompleteListItemHash   : _.template('<li data-ref-id="<%= id %>" data-ref-type="<%= type %>" data-display="<%= display %>"><div style="float:left;padding-right: 100px;"><%= content %></div><div style="float:right;"><%= text %></div></li>'),
+      autocompleteListItem       : _.template('<li data-ref-id="<%= id %>" data-ref-type="<%= type %>" data-display="<%= display %>"><%= content %></li>'),
+      autocompleteListItemHash   : _.template('<li data-ref-id="<%= id %>" data-ref-type="<%= type %>" data-display="<%= display %>"><div style="float:left;padding-right: 100px;"><%= content %></div><div style="float:right;"><%= text %></div></li>'),
       autocompleteListItemAvatar : _.template('<img src="<%= avatar %>" />'),
       autocompleteListItemIcon   : _.template('<div class="icon <%= icon %>"></div>'),
       mentionsOverlay            : _.template('<div class="mentions"><div></div></div>'),
-    hashItemSyntax           : _.template('<%= name %>'),
+      hashItemSyntax             : _.template('<%= name %>'),
       mentionItemSyntax          : _.template('<%= id %>'),
       mentionItemHighlight       : _.template('<strong><span><%= value %></span></strong>')
     }
@@ -91,7 +93,6 @@
 
   //Main class of MentionsInput plugin
   var MentionsInput = function (settings) {
-
     var domInput,
     elmInputBox,
     elmInputWrapper,
@@ -156,11 +157,10 @@
   //Updates the values of the main variables
     function updateValues() {
       var syntaxMessage = getInputBoxValue(); //Get the actual value of the text area
-
       _.each(mentionsCollection, function (mention) {
 
         var textSyntax = mention.type == 'user' || mention.type == 'group' ? settings.templates.mentionItemSyntax(mention) : settings.templates.hashItemSyntax(mention);
-    syntaxMessage = syntaxMessage.replace(new RegExp(utils.regexpEncode(mention.value), 'g'), textSyntax);
+      syntaxMessage = syntaxMessage.replace(new RegExp(utils.regexpEncode(mention.value)), textSyntax);
       });
 
       var mentionText = utils.htmlEncode(syntaxMessage); //Encode the syntaxMessage
@@ -177,7 +177,7 @@
       mentionText = mentionText.replace(/ {2}/g, '&nbsp; '); //Replace the 2 preceding token to &nbsp;
 
       elmInputBox.data('messageText', syntaxMessage); //Save the messageText to elmInputBox
-    elmInputBox.trigger('updated');
+      elmInputBox.trigger('updated');
       elmMentionsOverlay.find('div').html(mentionText); //Insert into a div of the elmMentionsOverlay the mention text
     }
 
@@ -199,12 +199,11 @@
 
   //Adds mention to mentions collections 
     function addMention(mention, chBrackets) {
-    var currentMessage = getInputBoxValue(); //Get the actual value of the text area
+      var currentMessage = getInputBoxValue(); //Get the actual value of the text area
       // Using a regex to figure out positions
       var regexM = new RegExp();
       var regexH = new RegExp();
       var currentLength = currentDataQuery.length;
-      
       if(charVariable == '#'){
         currentDataQuery = currentDataQuery.replace(/([\&\'\.\*\+\?\^\=\!\:\$\{\}\(\)\|\[\]\/\\\%\;])/g, "\\$1");
         regexH = new RegExp("\\" + settings.triggerChar[1] + currentDataQuery, "gi");
@@ -213,12 +212,10 @@
         regexM = new RegExp("\\" + settings.triggerChar[0] + currentDataQuery, "gi");
       }
       regexM.exec(currentMessage); //Executes a search for a match in a specified string. Returns a result array, or null
-    regexH.exec(currentMessage);
-    var lIndex = regexM.lastIndex >= regexH.lastIndex ? regexM.lastIndex : regexH.lastIndex
-
+      regexH.exec(currentMessage);
+      var lIndex = regexM.lastIndex >= regexH.lastIndex ? regexM.lastIndex : regexH.lastIndex
       var startCaretPosition = lIndex - currentLength - 1; //Set the star caret position
       var currentCaretPosition = lIndex; //Set the current caret position
-
       var start = currentMessage.substr(0, startCaretPosition);
       var end = currentMessage.substr(currentCaretPosition, currentMessage.length);
       var startEndIndex = (start + mention.value).length + 4;
@@ -239,9 +236,8 @@
       }else{
         updatedMessageText = start + charVariable+'[' +mention.value + '] ' + end;
       }
-      
       elmInputBox.val(updatedMessageText); //Set the value to the txt area
-    elmInputBox.trigger('mention');
+      elmInputBox.trigger('mention');
       updateValues();
 
       // Set correct focus and selection
@@ -317,13 +313,13 @@
     function onInputBoxInput(e) {
       updateValues();
       updateMentionsCollection();
-    var triggerCharIndexes = new Array();
-    _.each(settings.triggerChar, function(sChar){
-      triggerCharIndexes.push(_.lastIndexOf(inputBuffer, sChar));
-    })
+      var triggerCharIndexes = new Array();
+      _.each(settings.triggerChar, function(sChar){
+        triggerCharIndexes.push(_.lastIndexOf(inputBuffer, sChar));
+      })
       var triggerCharIndex = _.max(triggerCharIndexes); //Returns the last match of the triggerChar in the inputBuffer
-    charVariable = inputBuffer[triggerCharIndex];
-    if (triggerCharIndex > -1) { //If the triggerChar is present in the inputBuffer array
+      charVariable = inputBuffer[triggerCharIndex];
+      if (triggerCharIndex > -1) { //If the triggerChar is present in the inputBuffer array
         currentDataQuery = inputBuffer.slice(triggerCharIndex + 1).join(''); //Gets the currentDataQuery
         currentDataQuery = utils.rtrim(currentDataQuery); //Deletes the whitespaces
 
@@ -387,12 +383,8 @@
         addMention(createHashTagItem());
         hideAutoComplete();
         countWords = 0;
-        //console.log('end');
-        //console.log(e.keyCode);
         return;
       }
-    //console.log('add word');
-    //console.log(countWords);
      
     return;
     }
@@ -469,18 +461,18 @@
       var elmDropDownList = $("<ul>").appendTo(elmAutocompleteList).hide(); //Inserts a ul element to autocomplete div and hide it
 
     if(charVariable == '#'){
-    var itemHashUid = _.uniqueId('topic_');
-    var item = {
+      var itemHashUid = _.uniqueId('topic_');
+      var item = {
       type  : "topic",
       name  : currentDataQuery,
       id    : itemHashUid
     }
       autocompleteItemCollection[itemHashUid] = _.extend({}, item, {value: currentDataQuery}); //Inserts the new item to autocompleteItemCollection
-    var elmListItemHash = $(settings.templates.autocompleteListItemHash({
+      var elmListItemHash = $(settings.templates.autocompleteListItemHash({
       'id'      : utils.htmlEncode(item.id),
-          'display' : utils.htmlEncode(currentDataQuery),
+      'display' : utils.htmlEncode(currentDataQuery),
       'type'    : utils.htmlEncode(item.type),
-          'content' : utils.highlightTerm(utils.htmlEncode(currentDataQuery), query),
+      'content' : utils.highlightTerm(utils.htmlEncode(currentDataQuery), query),
       'text'    : utils.htmlEncode('Press ENTER to add')
     })).attr('data-uid', itemHashUid); //Inserts the new item to list
     selectAutoCompleteItem(elmListItemHash);
@@ -492,53 +484,53 @@
     
       _.each(results, function (item, index) {
         var itemUid = _.uniqueId('mention_'); //Gets the item with unique id
-    autocompleteItemCollection[itemUid] = _.extend({}, item, {value: item.name}); //Inserts the new item to autocompleteItemCollection
-    var elmListItem;
-    if(charVariable == '#'){
+        autocompleteItemCollection[itemUid] = _.extend({}, item, {value: item.name}); //Inserts the new item to autocompleteItemCollection
+        var elmListItem;
+        if(charVariable == '#'){
 
-      elmListItem = $(settings.templates.autocompleteListItemHash({
-        'id'      : utils.htmlEncode(item.id),
-        'display' : utils.htmlEncode(item.name),
-        'type'    : utils.htmlEncode(item.type),
-        'content' : utils.highlightTerm(utils.htmlEncode((item.display ? item.display : item.name)), query),
-        'text'    : utils.htmlEncode(item.talkingAbout+' '+item.text)
-      })).attr('data-uid', itemUid); //Inserts the new item to list
+          elmListItem = $(settings.templates.autocompleteListItemHash({
+            'id'      : utils.htmlEncode(item.id),
+            'display' : utils.htmlEncode(item.name),
+            'type'    : utils.htmlEncode(item.type),
+            'content' : utils.highlightTerm(utils.htmlEncode((item.display ? item.display : item.name)), query),
+            'text'    : utils.htmlEncode(item.talkingAbout+' '+item.text)
+          })).attr('data-uid', itemUid); //Inserts the new item to list
 
 
-    }else{
+        }else{
 
-      elmListItem = $(settings.templates.autocompleteListItem({
-        'id'      : utils.htmlEncode(item.id),
-        'display' : utils.htmlEncode(item.name),
-        'type'    : utils.htmlEncode(item.type),
-        'content' : utils.highlightTerm(utils.htmlEncode((item.display ? item.display : item.name)), query)
-      })).attr('data-uid', itemUid); //Inserts the new item to list
+          elmListItem = $(settings.templates.autocompleteListItem({
+            'id'      : utils.htmlEncode(item.id),
+            'display' : utils.htmlEncode(item.name),
+            'type'    : utils.htmlEncode(item.type),
+            'content' : utils.highlightTerm(utils.htmlEncode((item.display ? item.display : item.name)), query)
+          })).attr('data-uid', itemUid); //Inserts the new item to list
 
-      //If the index is 0
-      if (index === 0) {
-        selectAutoCompleteItem(elmListItem);
-      }
-    }
-    //If show avatars is true
-        if (settings.showAvatars) {
-          var elmIcon;
-
-      //If the item has an avatar
-          if (item.avatar) {
-            elmIcon = $(settings.templates.autocompleteListItemAvatar({ avatar : item.avatar }));
-          } else { //If not then we set an default icon
-            elmIcon = $(settings.templates.autocompleteListItemIcon({ icon : item.icon }));
+          //If the index is 0
+          if (index === 0) {
+            selectAutoCompleteItem(elmListItem);
           }
-          elmIcon.prependTo(elmListItem); //Inserts the elmIcon to elmListItem
         }
-        elmListItem = elmListItem.appendTo(elmDropDownList); //Insets the elmListItem to elmDropDownList
+        //If show avatars is true
+            if (settings.showAvatars) {
+              var elmIcon;
+
+          //If the item has an avatar
+              if (item.avatar) {
+                elmIcon = $(settings.templates.autocompleteListItemAvatar({ avatar : item.avatar }));
+              } else { //If not then we set an default icon
+                elmIcon = $(settings.templates.autocompleteListItemIcon({ icon : item.icon }));
+              }
+              elmIcon.prependTo(elmListItem); //Inserts the elmIcon to elmListItem
+            }
+            elmListItem = elmListItem.appendTo(elmDropDownList); //Insets the elmListItem to elmDropDownList
       });
       elmAutocompleteList.show(); //Shows the elmAutocompleteList div
-    if (settings.onCaret) {
-    positionAutocomplete(elmAutocompleteList, elmInputBox);
+      if (settings.onCaret) {
+      positionAutocomplete(elmAutocompleteList, elmInputBox);
+        }
+      elmDropDownList.show(); //Shows the elmDropDownList
       }
-    elmDropDownList.show(); //Shows the elmDropDownList
-    }
 
   //Search into data list passed as parameter
     function doSearch(query) {
@@ -563,8 +555,16 @@
 
   //Resets the text area
     function resetInput() {
-      elmInputBox.val('');
-      mentionsCollection = [];
+      if(settings.editMessage.length){
+        elmInputBox.val(settings.editMessage);
+      }else{
+        elmInputBox.val('');
+      }
+      if(settings.prefillMentions.length){
+        mentionsCollection = settings.prefillMentions;
+      }else{
+        mentionsCollection = [];  
+      }
       updateValues();
     }
 
@@ -613,8 +613,8 @@
         if (!_.isFunction(callback)) {
           return;
         }
-
         callback.call(this, mentionsCollection.length ? elmInputBox.data('messageText') : getInputBoxValue());
+
       },
 
     //Resets the text area value and clears all mentions
@@ -635,7 +635,6 @@
 
   //Main function to include into jQuery and initialize the plugin
   $.fn.mentionsInput = function (method, settings) {
-
     var outerArguments = arguments; //Gets the arguments
 
   //If method is not a function

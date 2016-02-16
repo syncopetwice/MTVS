@@ -221,6 +221,8 @@ Components
 .CommunityFeed :-ms-input-placeholder { color: #b0b0b0; }
 .CommunityFeed h4.media-heading { display: inherit; }
 .CommunityFeed .btn-u:hover { transition: min-width 0s; }
+.CommunityFeed #postarea .edit-form textarea { height: 78px; }
+.CommunityFeed #postarea .edit-form .text-right .mentions-input-box { display: inline-block; }
 
 /* ------------------------
 	CommunityFeedNavigation
@@ -228,6 +230,9 @@ Components
 .CommunityFeedNavigation .menu-item-link a:hover { color: #72c02c; text-decoration: underline; }
 .CommunityFeedNavigation .menu-item-link a:focus { color: #555; }
 .CommunityFeedNavigation ul li, .CommunityFeedNavigation ol li { margin-left: 0; }
+
+.CommunityFieldLayout .radioOptions fieldset { padding: 0px; }
+.CommunityFieldLayout .radioOptions label { font-weight: 400; padding-left: 5px; }
 
 /* ---------------------------
 	CommunityHomeNotifications

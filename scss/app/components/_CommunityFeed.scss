@@ -183,4 +183,17 @@
 	.btn-u:hover {
 		transition: min-width 0s;
 	}
+	// Modal Post Area
+	#postarea {
+		.edit-form {
+			textarea {
+				height: 78px;
+			}
+			.text-right {
+				.mentions-input-box {
+					display: inline-block;
+				}
+			}
+		}
+	}
 }
